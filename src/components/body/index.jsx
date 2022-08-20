@@ -2,15 +2,15 @@ import AboutMe from '../infoBlock/aboutMe';
 import InfoBlock from '../infoBlock';
 import './main.css';
 
-const Main = () => {
+const Langing = () => {
     return (
-        <main>
+        <>
             <InfoBlock />
             <AboutMe />
-        </main>
+        </>
     );
 };
-export default Main;
+export default Langing;
 
 {
     /* <div

@@ -1,4 +1,5 @@
 // import background from '../../assets/header.svg';
+import background from '../../assets/svg/ellipses/Frame_ellipses.svg';
 import './info.css';
 
 import Typewriter from 'typewriter-effect';
@@ -7,7 +8,7 @@ const InfoBlock = () => {
     const text2 = `Je suis Développeuse Front-End`;
     return (
         <div className="info">
-            {/* <img src={background} alt="bacground's lines" /> */}
+            {/* <img src={background} alt="bacground" /> */}
             {/* <SvgLignes /> */}
             <div className="wrap-about">
                 <div className="about">
