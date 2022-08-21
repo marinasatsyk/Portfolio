@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+
 import ReactDOM from 'react-dom';
+
 import './modal.css';
 
 export const useModal = () => {
@@ -14,29 +17,43 @@ export const useModal = () => {
         toggle,
     };
 };
-export const Modal = ({ isModalOpened, hide, title, ...props }) =>
-    isModalOpened
-        ? ReactDOM.createPortal(
-              <>
-                  <div className="modalBackground" onClick={hide}>
-                      <div className="modalContainer">
-                          {/* <div className="titleCloseBtn">
-                              <div className="wrapperBtn">
-                                  <button
-                                      className="modal-close-button"
-                                      onClick={hide}
-                                  >
-                                      <span>&times;</span>
-                                  </button>
-                              </div>
-                          </div> */}
-                          {/* <div className="title-modal">
-                              <h4>{title}</h4>
-                          </div> */}
-                          <div className="modal-body">{props.children}</div>
-                      </div>
-                  </div>
-              </>,
-              document.body
-          )
-        : null;
+export const Modal = ({ isModalOpened, hide, ...props }) => (
+    <AnimatePresence>
+        {isModalOpened && (
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, transition: { duration: 0.3 } }}
+                exit={{ opacity: 0, transition: { duration: 0.3 } }}
+                className="modalBackground"
+                onClick={() => hide()}
+            >
+                <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{
+                        scale: 1,
+                        transition: { duration: 0.3 },
+                    }}
+                    exit={{ scale: 0, transition: { duration: 0.3 } }}
+                    className="modalContainer"
+                >
+                    <motion.div
+                        initial={{ scale: 0, opacity: 0 }}
+                        animate={{
+                            scale: 1,
+                            opacity: 1,
+                            transition: { delay: 0.1 },
+                        }}
+                        exit={{
+                            scale: 0,
+                            opacity: 0,
+                            transition: { delay: 0.1 },
+                        }}
+                        className="modal-body"
+                    >
+                        {props.children}
+                    </motion.div>
+                </motion.div>
+            </motion.div>
+        )}
+    </AnimatePresence>
+);
