@@ -20,7 +20,7 @@ export const Modal = ({ isModalOpened, hide, title, ...props }) =>
               <>
                   <div className="modalBackground" onClick={hide}>
                       <div className="modalContainer">
-                          <div className="titleCloseBtn">
+                          {/* <div className="titleCloseBtn">
                               <div className="wrapperBtn">
                                   <button
                                       className="modal-close-button"
@@ -29,7 +29,7 @@ export const Modal = ({ isModalOpened, hide, title, ...props }) =>
                                       <span>&times;</span>
                                   </button>
                               </div>
-                          </div>
+                          </div> */}
                           {/* <div className="title-modal">
                               <h4>{title}</h4>
                           </div> */}

@@ -4,7 +4,7 @@ import gitHubLogo from '../../assets/github-brands.svg';
 const Footer = () => {
     return (
         <>
-            <footer className="footer">
+            <footer className="footer-main">
                 <nav>
                     <ul className="footer-nav">
                         <li

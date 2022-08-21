@@ -1,3 +1,7 @@
+h1.title {
+    color: white;
+    font-size: 35px;
+}
 .proj {
     /* background-color: #f6f6f6; */
     background: #282c34;

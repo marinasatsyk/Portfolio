@@ -79,7 +79,7 @@ export const projects = [
         },
         tecnologies: ['js', 'html', 'css', 'sass', 'eslint', 'github'],
         externalLink: 'https://marinasatsyk.github.io/MarinaDARDE_6_18032021/',
-        gitHub: 'https://github.com/marinasatsyk/GameOn-website-FR.git',
+        gitHub: 'https://github.com/marinasatsyk/MarinaDARDE_6_18032021.git',
     },
     {
         id: 5,
@@ -157,7 +157,9 @@ export const projects = [
         name: 'Kasa',
         localLink: p8,
         description: {
-            challenge: `Développer une application Web avec React et React Router sans des librairies externes`,
+            challenge: [
+                `Développer une application Web avec React et React Router sans des librairies externes`,
+            ],
             solution: [
                 `Initialiser une application web avec un framework`,
                 `Développer les routes d'une application web avec React Router`,
@@ -183,7 +185,7 @@ export const projects = [
         name: 'SportSee',
         localLink: p9,
         description: {
-            challenge: `Développer un tableau de bord d'analytics avec React`,
+            challenge: [`Développer un tableau de bord d'analytics avec React`],
             solution: [
                 `Assurer la qualité des données d'une application`,
                 `Interagir avec un service Web`,
@@ -206,6 +208,7 @@ export const projects = [
             'jsdoc',
             'prop-types',
             'github',
+            'API',
         ],
         externalLink: '',
         gitHub: 'https://github.com/marinasatsyk/DARDEMarina_P12_18032021.git',
@@ -215,7 +218,9 @@ export const projects = [
         name: 'ArgentBank',
         localLink: p10,
         description: {
-            challenge: `Utiliser une API pour un compte utilisateur bancaire avec React`,
+            challenge: [
+                `Utiliser une API pour un compte utilisateur bancaire avec React`,
+            ],
             solution: [
                 `Implémenter un gestionnaire d'état dans une application React`,
                 `Intéragir avec une API`,
@@ -239,6 +244,7 @@ export const projects = [
             'prop-types',
             'swagger',
             'github',
+            'API',
         ],
         externalLink: '',
         gitHub: 'https://github.com/marinasatsyk/DARDEMarina_13_18032021.git',
@@ -259,7 +265,26 @@ export const projects = [
                 `Analyser la performance d'une application web`,
             ],
         },
-        tecnologies: [],
+        tecnologies: [
+            'react',
+            'js',
+            'html',
+            'css',
+            '@reduxjs/toolkit',
+            'date-fns',
+            'jsdoc',
+            'prop-types',
+            'react-dom',
+            'react-redux',
+            'react-router',
+            'react-router-dom',
+            'react-select',
+            'react-table',
+            'sass',
+            'eslint',
+            'axios',
+            'github',
+        ],
         externalLink: 'https://www.npmjs.com/package/darde_p14_modal_lib',
         gitHub: 'https://github.com/marinasatsyk/DARDEMarina_P14_18032021.git',
         gitHub_modal:
