@@ -4,7 +4,10 @@ export const cv = {
     mail: 'marinasatsyk@gmail.com',
     location: '06 Alpes-Maritimes',
     post: 'Développeuse Front-End Junior',
-    intro: `Étant une personne dynamique, positive, curieuse et autonome je m’investis à 100% dans les projets qui me sont confiés. Je serais ravie de mettre mon savoir-faire à l’œuvre dans votre équipe.`,
+    intro: [
+        `Étant une personne dynamique, positive, curieuse et autonome je m’investis à 100% dans les projets qui me sont confiés.`,
+        `Je serais ravie de mettre mon savoir-faire à l’œuvre dans votre équipe.`,
+    ],
     hardSkills: [
         `Créer des applications web dynamiques avec JavaScript et React`,
         `Créer des sites web responsives avec HTML et CSS`,
@@ -69,6 +72,7 @@ export const cv = {
             profession: `Développeur concepteur logiciel`,
             degree: `Diplôme RNCP niveau 6 (bac+3/4)`,
             note: ``,
+            class: 'first',
         },
         {
             period: `2000-2005`,
@@ -76,6 +80,7 @@ export const cv = {
             profession: `Spécialité : Droit, (spécialisation - droit civil)`,
             degree: `Diplôme d’État d’études supérieures (Bac+5)`,
             note: `Niveau CEC : 7 (Master) (attestation ENIC-NARIC de Janvier 2020)`,
+            class: 'second',
         },
     ],
     experience: [

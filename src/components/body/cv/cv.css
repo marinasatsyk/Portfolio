@@ -1,4 +1,119 @@
+/*generate*/
+.wrap-cv {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+article.cv {
+    /* border: 2px solid #ffc600; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/* header */
+article.cv header.cv {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #282c34;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+header.cv h1 {
+    font-size: 40px;
+}
+
+header.cv .presentation-group {
+    text-align: left;
+}
+article.cv section.post {
+    height: 100px;
+    text-align: center;
+    /* background: rgba(255, 198, 0, 0.3); */
+    border-bottom: 2px solid #ffc600;
+    background: #f4f4f4;
+}
+
+article.cv section {
+    margin-bottom: 15px;
+}
+.post h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+.post .slogan {
+    font-size: 20px;
+}
+
+.wrap-content-cv {
+    display: flex;
+    justify-content: space-between;
+}
+
+article.cv section {
+    text-align: left;
+}
+article.cv h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: fit-content;
+    background: #ffc600;
+}
+.left-side-cv,
+.right-side-cv {
+    width: 45%;
+}
+.wrap-list-languages li span {
+    margin-right: 5px;
+}
+
+/*rating notation*/
+.foreign-languages {
+    list-style-type: none;
+}
+.item-language {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+}
 .rank-circle img {
     width: 8px;
     height: 8px;
+    margin-right: 3px;
+}
+
+.first-institution-wrap {
+    margin-bottom: 10px;
+}
+.year-education {
+    color: #9f9fa0;
+    margin-right: 5px;
+}
+
+.title-education {
+    font-weight: bold;
+}
+
+.title-experience,
+.employer-experience {
+    font-weight: bold;
+}
+.title-experience span:first-child,
+.title-experience span:first-child {
+    margin-right: 5px;
+}
+
+.title-experience span:last-child,
+.employer-experience span:last-child {
+    color: #9f9fa0;
+    margin-left: 3px;
+}
+
+.telecharger {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    cursor: pointer;
 }
