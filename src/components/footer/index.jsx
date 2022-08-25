@@ -1,6 +1,6 @@
 import './footer.css';
-import inlogo from '../../assets/linkedin-brands.svg';
-import gitHubLogo from '../../assets/github-brands.svg';
+import { ReactComponent as Inlogo } from '../../assets/linkedin-brands.svg';
+import { ReactComponent as GitHubLogo } from '../../assets/github-brands.svg';
 const Footer = () => {
     return (
         <>
@@ -14,7 +14,7 @@ const Footer = () => {
                                 )
                             }
                         >
-                            <img src={inlogo} alt="" className="inlogo" />
+                            <Inlogo className="inlogo svg" />
                             <div>Mon profil LinkedIn</div>
                         </li>
                         <li
@@ -24,12 +24,17 @@ const Footer = () => {
                                 )
                             }
                         >
-                            <img
-                                src={gitHubLogo}
-                                alt=""
-                                className="gitHubLogo"
-                            />
+                            <GitHubLogo className="gitHubLogo svg" />
                             <div>Mon profil GitHub</div>
+                        </li>
+                        <li>
+                            <a
+                                rel="nofollow"
+                                target="_blank"
+                                href="http://videezy.com/"
+                            >
+                                Images d’archives gratuites par Videezy
+                            </a>
                         </li>
                     </ul>
                 </nav>

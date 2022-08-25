@@ -5,8 +5,8 @@ export const data_about_me = {
     },
     about: [
         [
-            `Hello !`,
-            `Ici je raconterai comment j’ai atterri dans le développement.`,
+            `Hello!  `,
+            `Ici je raconterai comment j’ai atterri dans le développement.  `,
             `Mon parcours en développement est atypique.`,
         ],
 

@@ -15,6 +15,8 @@ import CV from './components/body/cv';
 import Skills from './components/body/skills';
 import Error from './components/error';
 import Projects from './components/body/projects';
+import videoBg from './assets/videoBg.mp4';
+// import videoBg from './assets/Map.mp4';
 
 function App() {
     document.title = 'DARDE Marina';
@@ -24,13 +26,23 @@ function App() {
             <div id="wrapper_body">
                 <Header />
                 <main>
-                    <Routes>
-                        <Route path="/" element={<Langing />} />
-                        <Route exact path="/cv" element={<CV />} />
-                        <Route exact path="/skills" element={<Skills />} />
-                        <Route exact path="/projects" element={<Projects />} />
-                        <Route path="*" element={<Error codeError="404" />} />
-                    </Routes>
+                    <video src={videoBg} autoPlay muted loop />
+                    <div id="main-content">
+                        <Routes>
+                            <Route path="/" element={<Langing />} />
+                            <Route exact path="/cv" element={<CV />} />
+                            <Route exact path="/skills" element={<Skills />} />
+                            <Route
+                                exact
+                                path="/projects"
+                                element={<Projects />}
+                            />
+                            <Route
+                                path="*"
+                                element={<Error codeError="404" />}
+                            />
+                        </Routes>
+                    </div>
                 </main>
 
                 {/* <Main /> */}

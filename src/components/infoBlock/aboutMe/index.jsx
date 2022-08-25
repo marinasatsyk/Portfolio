@@ -1,17 +1,18 @@
 import myPhoto from '../../../assets/photos_CV_2.png';
 import { data_about_me } from '../../data_about';
-import ellipses from '../../../assets/svg/ellipses/Frame_ellipses.svg';
+// import ellipses from '../../../assets/svg/ellipses/Frame_ellipses.svg';
 import quote_l from '../../../assets/quote-left.svg';
 import quote_r from '../../../assets/quote-right.svg';
-import pc from '../../../assets/pc.png';
-import question from '../../../assets/circle_question.svg';
-import action from '../../../assets/person_chalkboard.svg';
-import proposition from '../../../assets/bullhorn.svg';
-import idea from '../../../assets/lightbulb.svg';
-import enthousiasme from '../../../assets/briefcase.svg';
-import hand from '../../../assets/handshake.svg';
+import { ReactComponent as Question } from '../../../assets/circle_question.svg';
+// import action from '../../../assets/person_chalkboard.svg';
+import { ReactComponent as Proposition } from '../../../assets/bullhorn.svg';
+import { ReactComponent as Idea } from '../../../assets/lightbulb.svg';
+import { ReactComponent as Enthousiasme } from '../../../assets/briefcase.svg';
+import { ReactComponent as Hand } from '../../../assets/handshake.svg';
 import './aboutMe.css';
 import { useLocation } from 'react-router';
+import Typewriter from 'typewriter-effect';
+
 const AboutMe = () => {
     let url = useLocation();
     console.log(url);
@@ -48,13 +49,50 @@ const AboutMe = () => {
                                 </div>
                             </div>
                             <div className="presentation-content">
-                                <h4>{data_about_me.about[0][0]}</h4>
+                                {/* <h4>{data_about_me.about[0][0]}</h4>
                                 <div className="content-label">
                                     {data_about_me.about[0][1]}
                                 </div>
                                 <div className="content-content">
                                     {data_about_me.about[0][2]}
+                                </div> */}
+                                <div className="content-label">
+                                    <Typewriter
+                                        onInit={(typewriter) => {
+                                            typewriter
+                                                .typeString(
+                                                    `${data_about_me.about[0][0]}`
+                                                )
+                                                .pauseFor(2500)
+                                                .typeString(
+                                                    `${data_about_me.about[0][1]}`
+                                                )
+                                                .stop()
+                                                .start();
+                                        }}
+
+                                        // options={{
+                                        //     strings: [
+                                        //         `${data_about_me.about[0][0]}`,
+                                        //         `${data_about_me.about[0][1]}`,
+                                        //     ],
+                                        //     autoStart: true,
+                                        //      loop: true,
+                                        // }}
+                                    />
                                 </div>
+                                {/* <div className="content-content">
+                                    <Typewriter
+                                        onInit={(typewriter) => {
+                                            typewriter
+                                                .pauseFor(2500)
+                                                .typeString(
+                                                    `${data_about_me.about[0][1]}`
+                                                )
+                                                .start();
+                                        }}
+                                    />
+                                </div> */}
                             </div>
                         </div>
 
@@ -73,9 +111,7 @@ const AboutMe = () => {
                                                 className="img_about_wrap"
                                                 key={`${index}-${item.id}-wrap`}
                                             >
-                                                <img
-                                                    src={question}
-                                                    alt=""
+                                                <Question
                                                     key={`${index}-${item.id}`}
                                                     className="about_icon"
                                                 />
@@ -86,9 +122,7 @@ const AboutMe = () => {
                                                 className="img_about_wrap"
                                                 key={`${index}-${item.id}-wrap`}
                                             >
-                                                <img
-                                                    src={idea}
-                                                    alt=""
+                                                <Idea
                                                     key={`${index}-${item.id}`}
                                                     className="about_icon"
                                                 />
@@ -99,11 +133,9 @@ const AboutMe = () => {
                                                 className="img_about_wrap"
                                                 key={`${index}-${item.id}-wrap`}
                                             >
-                                                <img
-                                                    src={enthousiasme}
-                                                    alt=""
+                                                <Enthousiasme
                                                     key={`${index}-${item.id}`}
-                                                    className="about_icon"
+                                                    className="about_icon "
                                                 />
                                             </div>
                                         )}
@@ -112,9 +144,7 @@ const AboutMe = () => {
                                                 className="img_about_wrap"
                                                 key={`${index}-${item.id}-wrap`}
                                             >
-                                                <img
-                                                    src={proposition}
-                                                    alt=""
+                                                <Proposition
                                                     key={`${index}-${item.id}`}
                                                     className="about_icon"
                                                 />
@@ -133,7 +163,7 @@ const AboutMe = () => {
                         </div>
                         <div className="wrarp-description-item conclusion">
                             <div className="img_about_wrap conclusion">
-                                <img src={hand} alt="" className="about_icon" />
+                                <Hand className="about_icon" />
                             </div>
                             <div className="description-item-content wrarp-description">
                                 {data_about_me.conclusion}
