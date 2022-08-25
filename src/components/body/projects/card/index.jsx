@@ -21,7 +21,7 @@ const Card = ({ item }) => {
                 onClick={handleClick}
             >
                 <img src={item.localLink} alt="" className="cover-proj" />
-                <div className="btn-details">Détailles</div>
+                {/* <div className="btn-details">Détailles</div> */}
             </div>
             <ModalPart
                 item={item}

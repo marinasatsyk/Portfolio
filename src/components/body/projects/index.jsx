@@ -10,14 +10,6 @@ const Projects = () => {
             <h1 className="title">Mes projets</h1>
             <div className="wrap-projects">
                 {projCopy.map((item, index) => (
-                    // <div className="wrap-cover-proj" key={index}>
-                    //     <img
-                    //         src={item.localLink}
-                    //         alt=""
-                    //         className="cover-proj"
-                    //     />
-
-                    // </div>
                     <Card item={item} index={index} key={index} />
                 ))}
             </div>
