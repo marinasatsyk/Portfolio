@@ -1,7 +1,7 @@
 export const cv = {
     nom: `Marina DARDÉ`,
     phone: '0661380847',
-    mail: 'marinasatsyk@gmail.com',
+    mail: 'dardemarina@gmail.com',
     location: '06 Alpes-Maritimes',
     post: 'Développeuse Front-End Junior',
     intro: [

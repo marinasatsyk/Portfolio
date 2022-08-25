@@ -1,15 +1,11 @@
 import { cv } from '../../data_cv';
 import RatingScale from './ratingScale';
 import myPhoto from '../../../assets/photos_CV_2.png';
-import filecv from '../../../assets/cv.pdf';
 
 import './cv.css';
 const CV = () => {
     return (
         <div className="wrap-cv">
-            {/* <div className="telecharger">
-                <a href={filecv} download></a>
-            </div> */}
             <article className="cv">
                 <header className="cv">
                     <div className="presentation-group">

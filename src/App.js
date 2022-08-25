@@ -18,6 +18,7 @@ import Projects from './components/body/projects';
 
 function App() {
     document.title = 'DARDE Marina';
+
     return (
         <Router>
             <div id="wrapper_body">

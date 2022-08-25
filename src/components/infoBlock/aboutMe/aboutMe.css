@@ -1,11 +1,20 @@
-.wrap-aboutMe {
+#wrapper-aboutMe-main {
+    height: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.wrap-aboutMe {
+    display: flex;
+    /* align-items: center; */
     justify-content: space-between;
-    background: #f4f4f4;
+    /* background: #f4f4f4; */
     padding: 1rem;
-    height: 200px;
-    border-left: 50px solid #ffc600;
+    height: 100%;
+    /* border-left: 50px solid #ffc600; */
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .photo-container {
@@ -28,4 +37,108 @@
     position: absolute;
     top: 0;
     left: 0;
+}
+
+article.aboutMe {
+    height: 100%;
+    /* margin-bottom: 30px; */
+    background: #f4f4f4;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: -7px 8px 7px 0px #9b937a;
+}
+.quote_block {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+.quote_block h3 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.quote {
+    width: 25px;
+}
+.wrap_quote.l {
+    /* text-align: left; */
+    position: relative;
+    top: -10px;
+}
+.wrap_quote.r {
+    /* text-align: right; */
+    position: relative;
+    top: 10px;
+}
+.author {
+    /* text-align: right; */
+    margin-left: 15px;
+}
+#wrap-content {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold !important;
+}
+
+.presentation {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.wrap-all-description {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.wrarp-description-item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.wrarp-description-item.conclusion {
+    padding-bottom: unset;
+}
+
+.description-item-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+.description-item-content {
+    /* width: calc(1440px - 3px - 250px); */
+
+    padding-left: 30px;
+}
+.border-line {
+    width: 3px;
+    background: #ffc600;
+}
+
+.img_about_wrap {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 5px solid #ffc600;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: fixed; */
+    /* top: 20px;
+    right: 20px; */
+    /* cursor: pointer; */
+    z-index: 1;
+}
+
+.img_about_wrap.conclusion {
+    border: 5px solid #1f8c43;
+    background: #e5fae5;
+}
+.about_icon {
+    width: 35px;
 }

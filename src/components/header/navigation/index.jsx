@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, NavLink } from 'react-router-dom';
 import { useModal, Modal } from '../../body/Modal';
+import DARDE_Marina_CV from '../../../assets/cv.pdf';
 
 import logo from '../../../assets/LogoLight.png';
 import './navigation.css';
@@ -40,7 +41,7 @@ const Navigation = () => {
                             CV
                         </NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                         <NavLink
                             to="/skills"
                             style={({ isActive }) =>
@@ -49,7 +50,7 @@ const Navigation = () => {
                         >
                             Competences
                         </NavLink>
-                    </li>
+                    </li> */}
                     <li>
                         <NavLink
                             to="/projects"
@@ -62,7 +63,11 @@ const Navigation = () => {
                     </li>
                 </ul>
             </nav>
-            <div className="contact-me">Contactez-moi</div>
+            <div className="contact-me">
+                <a href={DARDE_Marina_CV} download="DARDE_Marina_CV.pdf">
+                    Télécharger mon CV
+                </a>
+            </div>
         </div>
     );
 };

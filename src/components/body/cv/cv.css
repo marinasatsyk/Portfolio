@@ -1,12 +1,12 @@
 /*generate*/
 .wrap-cv {
-    max-width: 1440px;
-    margin: 0 auto;
+    height: 100%;
 }
+
 article.cv {
     /* border: 2px solid #ffc600; */
-    margin-top: 15px;
-    margin-bottom: 15px;
+    max-width: 1440px;
+    margin: 15px auto;
 }
 /* header */
 article.cv header.cv {
@@ -59,6 +59,7 @@ article.cv h4 {
     margin-bottom: 10px;
     width: fit-content;
     background: #ffc600;
+    border-left: 10px solid #9f9fa0;
 }
 .left-side-cv,
 .right-side-cv {
@@ -114,6 +115,18 @@ article.cv h4 {
 .telecharger {
     width: 100px;
     height: 100px;
-    border: 1px solid black;
+    border-radius: 50%;
+    border: 5px solid white;
+    background: #ffc600;
     cursor: pointer;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.telecharger a {
+    text-decoration: none;
+    color: #282c34;
+    font-weight: bold;
 }
