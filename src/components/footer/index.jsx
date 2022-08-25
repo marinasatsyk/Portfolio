@@ -7,31 +7,30 @@ const Footer = () => {
             <footer className="footer-main">
                 <nav>
                     <ul className="footer-nav">
-                        <li
-                            onClick={() =>
-                                window.open(
-                                    'https://www.linkedin.com/in/marinadarde/'
-                                )
-                            }
-                        >
-                            <Inlogo className="inlogo svg" />
-                            <div>Mon profil LinkedIn</div>
-                        </li>
-                        <li
-                            onClick={() =>
-                                window.open(
-                                    'https://github.com/marinasatsyk?tab=repositories'
-                                )
-                            }
-                        >
-                            <GitHubLogo className="gitHubLogo svg" />
-                            <div>Mon profil GitHub</div>
+                        <li>
+                            <a
+                                rel="noreferrer"
+                                target="_blank"
+                                href="https://www.linkedin.com/in/marinadarde/"
+                            >
+                                <Inlogo className="inlogo svg" />
+                            </a>
                         </li>
                         <li>
                             <a
-                                rel="nofollow"
+                                rel="noreferrer"
+                                target="_blank"
+                                href="https://github.com/marinasatsyk?tab=repositories"
+                            >
+                                <GitHubLogo className="gitHubLogo svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                rel="noreferrer"
                                 target="_blank"
                                 href="http://videezy.com/"
+                                className="licence"
                             >
                                 Images d’archives gratuites par Videezy
                             </a>

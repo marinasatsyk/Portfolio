@@ -70,29 +70,8 @@ const AboutMe = () => {
                                                 .stop()
                                                 .start();
                                         }}
-
-                                        // options={{
-                                        //     strings: [
-                                        //         `${data_about_me.about[0][0]}`,
-                                        //         `${data_about_me.about[0][1]}`,
-                                        //     ],
-                                        //     autoStart: true,
-                                        //      loop: true,
-                                        // }}
                                     />
                                 </div>
-                                {/* <div className="content-content">
-                                    <Typewriter
-                                        onInit={(typewriter) => {
-                                            typewriter
-                                                .pauseFor(2500)
-                                                .typeString(
-                                                    `${data_about_me.about[0][1]}`
-                                                )
-                                                .start();
-                                        }}
-                                    />
-                                </div> */}
                             </div>
                         </div>
 
@@ -151,7 +130,7 @@ const AboutMe = () => {
                                             </div>
                                         )}
                                     </div>
-                                    {/* <div className="border-line"></div> */}
+
                                     <div
                                         className="description-item-content wrarp-description"
                                         key={`${index}-content`}

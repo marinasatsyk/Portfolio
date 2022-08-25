@@ -51,10 +51,10 @@ article.aboutMe {
 }
 .quote_block {
     display: flex;
-    /* flex-direction: column; */
+
     justify-content: center;
     align-items: center;
-    margin-bottom: 50px;
+
     font-size: 25px;
 }
 .quote_block h3 {
@@ -65,35 +65,35 @@ article.aboutMe {
     width: 25px;
 }
 .wrap_quote.l {
-    /* text-align: left; */
     position: relative;
     top: -10px;
 }
 .wrap_quote.r {
-    /* text-align: right; */
     position: relative;
     top: 10px;
 }
 .author {
-    /* text-align: right; */
     margin-left: 15px;
 }
 #wrap-content {
     text-align: left;
     font-size: 20px;
-    font-weight: bold !important;
+    font-weight: bold;
 }
 
 .presentation {
     display: flex;
     gap: 30px;
     align-items: center;
+    letter-spacing: 1px;
 }
 
 .wrap-all-description {
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1px;
 }
 
 .wrarp-description-item {
@@ -108,17 +108,11 @@ article.aboutMe {
 .description-item-title {
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 10px;
-    flex-grow: 1;
+    /* margin-bottom: 10px; */
+    /* flex-grow: 1; */
 }
 .description-item-content {
-    /* width: calc(1440px - 3px - 250px); */
-
     padding-left: 30px;
-}
-.border-line {
-    width: 3px;
-    background: #ffc600;
 }
 
 .img_about_wrap {

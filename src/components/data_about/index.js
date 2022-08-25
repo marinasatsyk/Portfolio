@@ -6,7 +6,7 @@ export const data_about_me = {
     about: [
         [
             `Hello!  `,
-            `Ici je raconterai comment j’ai atterri dans le développement.  `,
+            `Voilà qui je suis...  `,
             `Mon parcours en développement est atypique.`,
         ],
 
