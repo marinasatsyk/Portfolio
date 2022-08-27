@@ -1,11 +1,17 @@
 import { cv } from '../../data_cv';
 import RatingScale from './ratingScale';
 import myPhoto from '../../../assets/photos_CV_2.png';
+import { motion } from 'framer-motion';
 
 import './cv.css';
 const CV = () => {
     return (
-        <div className="wrap-cv">
+        <motion.div
+            className="wrap-cv"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+        >
             <article className="cv">
                 <header className="cv">
                     <div className="presentation-group">
@@ -255,7 +261,7 @@ const CV = () => {
                     </div>
                 </div>
             </article>
-        </div>
+        </motion.div>
     );
 };
 export default CV;

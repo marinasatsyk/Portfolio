@@ -1,6 +1,8 @@
 import './footer.css';
 import { ReactComponent as Inlogo } from '../../assets/linkedin-brands.svg';
 import { ReactComponent as GitHubLogo } from '../../assets/github-brands.svg';
+import { motion } from 'framer-motion';
+
 const Footer = () => {
     return (
         <>

@@ -1,6 +1,9 @@
 import { Modal, useModal } from '../../Modal';
-import gitHubLogo from '../../../../assets/github-brands.svg';
-import netLogo from '../../../../assets/globe-solid.svg';
+// import gitHubLogo from '../../../../assets/github-brands.svg';
+// import netLogo from '../../../../assets/globe-solid.svg';
+import { ReactComponent as Inlogo } from '../../../../assets/globe-solid.svg';
+import { ReactComponent as GitHubLogo } from '../../../../assets/github-brands.svg';
+
 import { motion } from 'framer-motion';
 
 const ModalPart = ({ item, isCardOpened, handleClick }) => {
@@ -71,31 +74,25 @@ const ModalPart = ({ item, isCardOpened, handleClick }) => {
                     <footer className="footer-modal">
                         <nav>
                             <ul className="footer-nav-modal">
-                                <li
-                                    className="item-modal-link"
-                                    onClick={() => window.open(item.gitHub)}
-                                >
-                                    <img
-                                        src={gitHubLogo}
-                                        alt=""
-                                        className="gitHubLogo modal-logo"
-                                    />
-                                    <div>Regarder le code</div>
+                                <li className="item-modal-link">
+                                    <a
+                                        rel="noreferrer"
+                                        target="_blank"
+                                        href={`${item.gitHub}`}
+                                    >
+                                        <GitHubLogo className="gitHubLogo svg" />
+                                    </a>
                                 </li>
 
                                 {item.externalLink && (
-                                    <li
-                                        className="item-modal-link"
-                                        onClick={() =>
-                                            window.open(item.externalLink)
-                                        }
-                                    >
-                                        <img
-                                            src={netLogo}
-                                            alt=""
-                                            className="netLogo modal-logo"
-                                        />
-                                        <div>Regarder le site</div>
+                                    <li className="item-modal-link">
+                                        <a
+                                            rel="noreferrer"
+                                            target="_blank"
+                                            href={`${item.externalLink}`}
+                                        >
+                                            <Inlogo className="netLogo svg" />
+                                        </a>
                                     </li>
                                 )}
                             </ul>

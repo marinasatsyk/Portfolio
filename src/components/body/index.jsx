@@ -6,7 +6,6 @@ import './main.css';
 const Langing = () => {
     return (
         <>
-            {/* <InfoBlock /> */}
             <AboutMe />
         </>
     );

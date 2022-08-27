@@ -1,12 +1,10 @@
 import React from 'react';
-import Dark_circle from '../../../../assets/circle-solid_dark.svg';
-import Light_circle from '../../../../assets/circle-solid_light.svg';
+import { ReactComponent as Ranc } from '../../../../assets/circle-solid_dark.svg';
+// import { ReactComponent as NonActivRanc } from '../../../../assets/circle-solid_light.svg';
 
 function RatingScale({ scaleValue, key }) {
     // const scaleRating = props.rating;
     const range = [1, 2, 3, 4, 5];
-    const activRanc = <img src={Dark_circle} alt="sun-icon" />;
-    const nonActivRanc = <img src={Light_circle} alt="sun-icon" />;
 
     return (
         <>
@@ -16,14 +14,20 @@ function RatingScale({ scaleValue, key }) {
                         key={`${rangeElem.toString()}-${key}`}
                         className="rank-circle"
                     >
-                        {activRanc}
+                        <Ranc
+                            className="rank-circle"
+                            style={{ fill: '#ffc600', width: '7px' }}
+                        />
                     </span>
                 ) : (
                     <span
                         key={`${rangeElem.toString()}-${key}`}
                         className="rank-circle"
                     >
-                        {nonActivRanc}
+                        <Ranc
+                            className="rank-circle"
+                            style={{ fill: '#D9D9D9', width: '7px' }}
+                        />
                     </span>
                 )
             )}

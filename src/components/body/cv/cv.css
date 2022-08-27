@@ -10,6 +10,7 @@ article.cv {
     color: white;
     border-radius: 10px;
     padding: 30px;
+    letter-spacing: 1px;
 }
 /* header */
 article.cv header.cv {
@@ -46,7 +47,7 @@ article.cv section {
     font-weight: bold;
 }
 .post .slogan {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .wrap-content-cv {
@@ -74,19 +75,24 @@ article.cv h4 {
 }
 
 /*rating notation*/
-.foreign-languages {
+ul.foreign-languages {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    line-height: 25px;
+}
+div.foreign-language {
+    width: 50%;
 }
 .item-language {
     display: flex;
     flex-direction: row;
-    width: 40%;
-    justify-content: space-between;
+    align-items: center;
 }
-.rank-circle img {
-    width: 8px;
-    height: 8px;
-    margin-right: 3px;
+
+.rank-language-wrap {
+    display: flex;
+    gap: 5px;
 }
 
 .first-institution-wrap {

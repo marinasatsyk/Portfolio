@@ -2,10 +2,15 @@ import React from 'react';
 import { BrowserRouter as Router, NavLink } from 'react-router-dom';
 import { useModal, Modal } from '../../body/Modal';
 import DARDE_Marina_CV from '../../../assets/cv.pdf';
-
+import { motion } from 'framer-motion';
 import logo from '../../../assets/LogoLight.png';
 import './navigation.css';
 
+const jumpVariants = {
+    visible: {
+        y: ['-100vh', 0, -10, 0, -10],
+    },
+};
 const Navigation = () => {
     // const [isModalOpened, setModalOpened] = useModal(false);
     let activeStyle = {
@@ -21,7 +26,14 @@ const Navigation = () => {
             </div>
             <nav className="header-nav">
                 <ul className="wrap-options">
-                    <li>
+                    <motion.li
+                        whileHover={{
+                            scale: 1.3,
+                            textShadow: '0px 0px 8px rgb(255, 255, 255)',
+                            y: -10,
+                        }}
+                        transition={{ type: 'spring', stiffness: 300 }}
+                    >
                         <NavLink
                             to="/"
                             style={({ isActive }) =>
@@ -30,8 +42,15 @@ const Navigation = () => {
                         >
                             Page d'accueil
                         </NavLink>
-                    </li>
-                    <li>
+                    </motion.li>
+                    <motion.li
+                        whileHover={{
+                            scale: 1.3,
+                            textShadow: '0px 0px 8px rgb(255, 255, 255)',
+                            y: -10,
+                        }}
+                        transition={{ type: 'spring', stiffness: 300 }}
+                    >
                         <NavLink
                             to="/cv"
                             style={({ isActive }) =>
@@ -40,8 +59,8 @@ const Navigation = () => {
                         >
                             CV
                         </NavLink>
-                    </li>
-                    {/* <li>
+                    </motion.li>
+                    {/* <motion.li>
                         <NavLink
                             to="/skills"
                             style={({ isActive }) =>
@@ -50,8 +69,16 @@ const Navigation = () => {
                         >
                             Competences
                         </NavLink>
-                    </li> */}
-                    <li>
+                    </motion.li> */}
+                    <motion.li
+                        whileHover={{
+                            scale: 1.3,
+                            textShadow: '0px 0px 8px rgb(255, 255, 255)',
+                            y: -10,
+                            // originY: 0,
+                        }}
+                        transition={{ type: 'spring', stiffness: 300 }}
+                    >
                         <NavLink
                             to="/projects"
                             style={({ isActive }) =>
@@ -60,14 +87,23 @@ const Navigation = () => {
                         >
                             Mes projets
                         </NavLink>
-                    </li>
+                    </motion.li>
                 </ul>
             </nav>
-            <div className="contact-me">
+            <motion.div
+                className="contact-me"
+                initial={{ y: '-100vh' }}
+                animate={{ y: 0 }}
+                transition={{ delay: 0.2, type: 'spring', stiffness: 300 }}
+                whileHover={{
+                    scale: 1.1,
+                    boxShadow: '0px 0px 8px rgb(255, 255, 255)',
+                }}
+            >
                 <a href={DARDE_Marina_CV} download="DARDE_Marina_CV.pdf">
                     Télécharger mon CV
                 </a>
-            </div>
+            </motion.div>
         </div>
     );
 };

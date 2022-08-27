@@ -12,13 +12,19 @@ import { ReactComponent as Hand } from '../../../assets/handshake.svg';
 import './aboutMe.css';
 import { useLocation } from 'react-router';
 import Typewriter from 'typewriter-effect';
+import { motion } from 'framer-motion';
 
 const AboutMe = () => {
     let url = useLocation();
     console.log(url);
 
     return (
-        <div id="wrapper-aboutMe-main">
+        <motion.div
+            id="wrapper-aboutMe-main"
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+        >
             {/* <img src={pc} alt="" className="pc" /> */}
             <article className="wrap-aboutMe">
                 <article className="aboutMe">
@@ -151,7 +157,7 @@ const AboutMe = () => {
                     </section>
                 </article>
             </article>
-        </div>
+        </motion.div>
     );
 };
 

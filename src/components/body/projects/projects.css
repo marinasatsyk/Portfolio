@@ -2,6 +2,7 @@ h1.title {
     color: white;
     font-size: 35px;
     margin-bottom: 20px;
+    text-shadow: 0px 0px 8px rgb(255 255 255);
 }
 .proj {
     /* background-color: #f6f6f6; */
