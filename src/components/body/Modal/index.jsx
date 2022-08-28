@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 import ReactDOM from 'react-dom';
@@ -17,43 +17,51 @@ export const useModal = () => {
         toggle,
     };
 };
-export const Modal = ({ isModalOpened, hide, ...props }) => (
-    <AnimatePresence>
-        {isModalOpened && (
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, transition: { duration: 0.3 } }}
-                exit={{ opacity: 0, transition: { duration: 0.3 } }}
-                className="modalBackground"
-                onClick={() => hide()}
-            >
+export const Modal = ({ isModalOpened, hide, ...props }) => {
+    useEffect(() => {
+        isModalOpened
+            ? (document.body.style.overflow = 'hidden')
+            : (document.body.style.overflow = 'unset');
+    }, [isModalOpened]);
+
+    return (
+        <AnimatePresence>
+            {isModalOpened && (
                 <motion.div
-                    initial={{ scale: 0 }}
-                    animate={{
-                        scale: 1,
-                        transition: { duration: 0.3 },
-                    }}
-                    exit={{ scale: 0, transition: { duration: 0.3 } }}
-                    className="modalContainer"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1, transition: { duration: 0.3 } }}
+                    exit={{ opacity: 0, transition: { duration: 0.3 } }}
+                    className="modalBackground"
+                    onClick={() => hide()}
                 >
                     <motion.div
-                        initial={{ scale: 0, opacity: 0 }}
+                        initial={{ scale: 0 }}
                         animate={{
                             scale: 1,
-                            opacity: 1,
-                            transition: { delay: 0.1 },
+                            transition: { duration: 0.3 },
                         }}
-                        exit={{
-                            scale: 0,
-                            opacity: 0,
-                            transition: { delay: 0.1 },
-                        }}
-                        className="modal-body"
+                        exit={{ scale: 0, transition: { duration: 0.3 } }}
+                        className="modalContainer"
                     >
-                        {props.children}
+                        <motion.div
+                            initial={{ scale: 0, opacity: 0 }}
+                            animate={{
+                                scale: 1,
+                                opacity: 1,
+                                transition: { delay: 0.1 },
+                            }}
+                            exit={{
+                                scale: 0,
+                                opacity: 0,
+                                transition: { delay: 0.1 },
+                            }}
+                            className="modal-body"
+                        >
+                            {props.children}
+                        </motion.div>
                     </motion.div>
                 </motion.div>
-            </motion.div>
-        )}
-    </AnimatePresence>
-);
+            )}
+        </AnimatePresence>
+    );
+};
