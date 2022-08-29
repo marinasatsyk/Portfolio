@@ -1,10 +1,8 @@
 import myPhoto from '../../../assets/photos_CV_2.png';
 import { data_about_me } from '../../data_about';
-// import ellipses from '../../../assets/svg/ellipses/Frame_ellipses.svg';
 import quote_l from '../../../assets/quote-left.svg';
 import quote_r from '../../../assets/quote-right.svg';
 import { ReactComponent as Question } from '../../../assets/circle_question.svg';
-// import action from '../../../assets/person_chalkboard.svg';
 import { ReactComponent as Proposition } from '../../../assets/bullhorn.svg';
 import { ReactComponent as Idea } from '../../../assets/lightbulb.svg';
 import { ReactComponent as Enthousiasme } from '../../../assets/briefcase.svg';
@@ -135,6 +133,17 @@ const AboutMe = () => {
                                                 />
                                             </div>
                                         )}
+                                        {item.id === 5 && (
+                                            <div
+                                                className="img_about_wrap conclusion"
+                                                key={`${index}-${item.id}-wrap`}
+                                            >
+                                                <Hand
+                                                    key={`${index}-${item.id}`}
+                                                    className="about_icon"
+                                                />
+                                            </div>
+                                        )}
                                     </div>
 
                                     <div
@@ -146,14 +155,14 @@ const AboutMe = () => {
                                 </div>
                             ))}
                         </div>
-                        <div className="wrarp-description-item conclusion">
+                        {/* <div className="wrarp-description-item conclusion">
                             <div className="img_about_wrap conclusion">
                                 <Hand className="about_icon" />
                             </div>
                             <div className="description-item-content wrarp-description">
                                 {data_about_me.conclusion}
                             </div>
-                        </div>
+                        </div> */}
                     </section>
                 </article>
             </article>

@@ -1,6 +1,4 @@
 import { Modal, useModal } from '../../Modal';
-// import gitHubLogo from '../../../../assets/github-brands.svg';
-// import netLogo from '../../../../assets/globe-solid.svg';
 import { ReactComponent as Inlogo } from '../../../../assets/globe-solid.svg';
 import { ReactComponent as GitHubLogo } from '../../../../assets/github-brands.svg';
 

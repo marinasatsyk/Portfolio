@@ -34,6 +34,10 @@ export const data_about_me = {
                 title: `Partie des propositions`,
                 content: `Chaque nouveau projet est unique et chaque fois on apprend encore plus, chaque fois on se lance dans un nouveau challenge et c’est exactement ça qui me motive et inspire. `,
             },
+            {
+                id: 5,
+                content: `Aujourd’hui j’ai hâte de m’investir dans de nouveaux projets, et pourquoi avec vous ? `,
+            },
         ],
     ],
 

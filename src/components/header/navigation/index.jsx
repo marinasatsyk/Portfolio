@@ -4,6 +4,9 @@ import { useModal, Modal } from '../../body/Modal';
 import DARDE_Marina_CV from '../../../assets/cv.pdf';
 import { motion } from 'framer-motion';
 import logo from '../../../assets/LogoLight.png';
+import useWindowDimensions from '../screenDimension';
+import { ReactComponent as Download } from '../../../assets/download.svg';
+
 import './navigation.css';
 
 const jumpVariants = {
@@ -19,8 +22,11 @@ const Navigation = () => {
     };
 
     let activeClassName = 'underline';
+
+    const dimension = useWindowDimensions();
     return (
         <div className="wrap-nav">
+            {console.log(dimension)}
             <div className="logo-wrap">
                 <img src={logo} alt="logo" className="logo" />
             </div>
@@ -40,7 +46,7 @@ const Navigation = () => {
                                 isActive ? activeStyle : undefined
                             }
                         >
-                            Page d'accueil
+                            Home
                         </NavLink>
                     </motion.li>
                     <motion.li
@@ -101,7 +107,11 @@ const Navigation = () => {
                 }}
             >
                 <a href={DARDE_Marina_CV} download="DARDE_Marina_CV.pdf">
-                    Télécharger mon CV
+                    {dimension.width > 768 ? (
+                        `Télécharger mon CV`
+                    ) : (
+                        <Download className="download" />
+                    )}
                 </a>
             </motion.div>
         </div>
