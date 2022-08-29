@@ -29,7 +29,7 @@ const Navigation = () => {
     const dimension = useWindowDimensions();
     return (
         <div className="wrap-nav">
-            {/* {console.log(dimension)} */}
+            {console.log(dimension)}
             {dimension.width > 768 && (
                 <div className="logo-wrap">
                     <img src={logo} alt="logo" className="logo" />

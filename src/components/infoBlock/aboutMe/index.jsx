@@ -13,8 +13,8 @@ import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
 
 const AboutMe = () => {
-    let url = useLocation();
-    console.log(url);
+    // let url = useLocation();
+    // console.log(url);
 
     return (
         <motion.div
