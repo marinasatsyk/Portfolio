@@ -23,6 +23,10 @@ ul.footer-nav li {
     height: 50px;
 }
 
+/* footer svg {
+    fill: white;
+    transition: fill 0.3s filter 0.3s;
+} */
 footer svg:hover {
     fill: #ffc600;
     filter: drop-shadow(0px 0px 8px rgb(255 255 255));
