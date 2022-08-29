@@ -6,6 +6,9 @@ import { motion } from 'framer-motion';
 import logo from '../../../assets/LogoLight.png';
 import useWindowDimensions from '../screenDimension';
 import { ReactComponent as Download } from '../../../assets/download.svg';
+import { ReactComponent as Home } from '../../../assets/home.svg';
+import { ReactComponent as CVlogo } from '../../../assets/cv.svg';
+import { ReactComponent as ProjetsLogo } from '../../../assets/projects.svg';
 
 import './navigation.css';
 
@@ -46,7 +49,11 @@ const Navigation = () => {
                                 isActive ? activeStyle : undefined
                             }
                         >
-                            Home
+                            {dimension.width > 768 ? (
+                                `Home`
+                            ) : (
+                                <Home className="home-logo mobile" />
+                            )}
                         </NavLink>
                     </motion.li>
                     <motion.li
@@ -63,7 +70,11 @@ const Navigation = () => {
                                 isActive ? activeStyle : undefined
                             }
                         >
-                            CV
+                            {dimension.width > 768 ? (
+                                `CV`
+                            ) : (
+                                <CVlogo className="cv-logo mobile" />
+                            )}
                         </NavLink>
                     </motion.li>
                     {/* <motion.li>
@@ -91,7 +102,11 @@ const Navigation = () => {
                                 isActive ? activeStyle : undefined
                             }
                         >
-                            Mes projets
+                            {dimension.width > 768 ? (
+                                `Mes projets`
+                            ) : (
+                                <ProjetsLogo className="projects-logo mobile" />
+                            )}
                         </NavLink>
                     </motion.li>
                 </ul>
@@ -110,7 +125,7 @@ const Navigation = () => {
                     {dimension.width > 768 ? (
                         `Télécharger mon CV`
                     ) : (
-                        <Download className="download" />
+                        <Download className="download mobile" />
                     )}
                 </a>
             </motion.div>

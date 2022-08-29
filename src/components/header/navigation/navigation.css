@@ -63,7 +63,7 @@ nav li {
     color: #282c34;
     font-weight: bold;
 }
-.download {
+.mobile {
     fill: white;
     width: 35px;
     height: 35px;
@@ -73,5 +73,9 @@ nav li {
     .contact-me {
         width: 60px;
         height: 60px;
+    }
+
+    nav a.active svg {
+        fill: #ffc600;
     }
 }
