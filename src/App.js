@@ -30,6 +30,10 @@ function App() {
                     <div id="main-content">
                         <Routes>
                             <Route path="/" element={<Langing />} />
+                            <Route
+                                path="Portfolio/"
+                                element={<Navigate to="/" replace />}
+                            />
                             <Route exact path="/cv" element={<CV />} />
                             <Route exact path="/skills" element={<Skills />} />
                             <Route
