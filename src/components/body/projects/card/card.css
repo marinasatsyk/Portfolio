@@ -2,8 +2,6 @@
     max-width: 80vw;
     max-height: 80vh;
     border-radius: 10px;
-    /* min-width: 335px;
-    min-height: 255px; */
     overflow: hidden;
     text-decoration: none;
     background: #fff;
@@ -49,8 +47,6 @@ ul.solution-wrap-items {
 }
 
 .item-proj-modal {
-    /* background: rgba(0, 0, 0, 0.6); */
-    /* border-radius: 5px; */
     height: 90%;
     width: 30%;
     font-size: 13px;
@@ -79,7 +75,6 @@ ul.solution-wrap-items {
 .footer-modal {
     height: 50px;
     border-top: 2px solid #ffc600;
-    /* background: rgba(0, 0, 0, 0.7); */
     padding: 5px 0;
     display: flex;
     justify-content: center;
@@ -102,18 +97,32 @@ ul.solution-wrap-items {
     margin: 0;
     padding: 0;
     width: 100%;
-    /* background: rgba(0, 0, 0, 0.7); */
 }
 
-/* .modal-logo {
-    width: 30px;
-    height: 30px;
-} */
-
 .item-modal-link {
-    /* display: flex; */
     cursor: pointer;
-    /* justify-content: left;
-    gap: 10px;
-    align-items: center; */
+}
+
+@media (max-width: 768px) {
+    .wrap-cover-proj-modal {
+        max-height: unset;
+        max-width: unset;
+        width: 100vw;
+    }
+
+    .details-modal {
+        position: unset;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .main-modal {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .item-proj-modal {
+        height: 90%;
+        padding: 5px;
+        width: 85%;
+    }
 }
