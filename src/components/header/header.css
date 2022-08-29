@@ -2,3 +2,8 @@
     background: #282c34;
     height: 100px;
 }
+@media (max-width: 768px) {
+    .header-main {
+        position: relative;
+    }
+}

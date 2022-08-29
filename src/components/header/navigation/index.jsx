@@ -29,12 +29,21 @@ const Navigation = () => {
     const dimension = useWindowDimensions();
     return (
         <div className="wrap-nav">
-            {console.log(dimension)}
-            <div className="logo-wrap">
-                <img src={logo} alt="logo" className="logo" />
-            </div>
+            {/* {console.log(dimension)} */}
+            {dimension.width > 768 && (
+                <div className="logo-wrap">
+                    <img src={logo} alt="logo" className="logo" />
+                </div>
+            )}
+
             <nav className="header-nav">
                 <ul className="wrap-options">
+                    {dimension.width <= 768 && (
+                        <li className="logo-wrap">
+                            <img src={logo} alt="logo" className="logo" />
+                        </li>
+                    )}
+
                     <motion.li
                         whileHover={{
                             scale: 1.3,

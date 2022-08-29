@@ -36,7 +36,7 @@ article.cv section.post {
     text-align: center;
     /* background: rgba(255, 198, 0, 0.3); */
     border-bottom: 2px solid #ffc600;
-    /* background: #f4f4f4; */
+    padding: 10px;
 }
 
 article.cv section {
@@ -139,4 +139,36 @@ div.foreign-language {
     text-decoration: none;
     color: #282c34;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    article.cv {
+        padding: 5px;
+    }
+    article.cv header.cv {
+        height: 150px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    article.cv section.post {
+        text-align: justify;
+        height: unset;
+    }
+    header.cv h1 {
+        font-size: 25px;
+    }
+    .post h1 {
+        font-size: 22px;
+    }
+    .post .slogan {
+        font-size: 13px;
+    }
+
+    .wrap-content-cv {
+        flex-direction: column;
+    }
+    .left-side-cv,
+    .right-side-cv {
+        width: 100%;
+    }
 }
