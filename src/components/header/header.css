@@ -1,6 +1,7 @@
 .header-main {
     background: #282c34;
     height: 100px;
+    z-index: 1;
 }
 @media (max-width: 768px) {
     .header-main {

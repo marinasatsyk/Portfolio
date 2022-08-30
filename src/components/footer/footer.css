@@ -1,6 +1,7 @@
 .footer-main {
     height: 100px;
     background: #282c34;
+    z-index: 1;
 }
 
 nav ul.footer-nav {

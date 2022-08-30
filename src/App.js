@@ -16,17 +16,31 @@ import Skills from './components/body/skills';
 import Error from './components/error';
 import Projects from './components/body/projects';
 import videoBg from './assets/videoBg.mp4';
+import { useEffect } from 'react';
+import ParticlesBg from './components/particles';
 // import videoBg from './assets/Map.mp4';
 
 function App() {
     document.title = 'DARDE Marina';
+    // useEffect(() => {
+    //     const script = document.createElement('script');
+    //     script.src = './components/bg_animation/work_part/particles.js';
+    //     script.async = true;
+    //     return () => {
+    //         document.body.removeChild(script);
+    //     };
+    // }, []);
 
     return (
         <Router>
             <div id="wrapper_body">
                 <Header />
                 <main>
-                    <video src={videoBg} autoPlay muted loop />
+                    {/* <div id="particles-js"></div>
+                    <div class="count-particles">
+                        <span class="js-count-particles">--</span> particles
+                    </div> */}
+                    <ParticlesBg />
                     <div id="main-content">
                         <Routes>
                             <Route path="/" element={<Langing />} />
@@ -47,6 +61,7 @@ function App() {
                             />
                         </Routes>
                     </div>
+                    {/* <video src={videoBg} autoPlay muted loop /> */}
                 </main>
 
                 {/* <Main /> */}
