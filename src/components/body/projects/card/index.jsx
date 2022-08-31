@@ -28,7 +28,7 @@ const Card = ({ item, index }) => {
                 onClick={handleClick}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ delay: (index + 10) / 10 }}
+                transition={{ delay: (index + 10) / 10, duration: 0.5 }}
                 // variants={cardVariants}
                 // whileHover="hover"
             >

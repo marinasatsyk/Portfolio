@@ -128,6 +128,11 @@ const Navigation = () => {
                 whileHover={{
                     scale: 1.1,
                     boxShadow: '0px 0px 8px rgb(255, 255, 255)',
+                    transition: {
+                        duration: 0.3,
+                        yoyo: Infinity,
+                        ease: 'easeInOut',
+                    },
                 }}
             >
                 <a href={DARDE_Marina_CV} download="DARDE_Marina_CV.pdf">

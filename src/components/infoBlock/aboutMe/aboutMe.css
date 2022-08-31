@@ -4,6 +4,9 @@
     justify-content: center;
 }
 
+.Typewriter__cursor {
+    display: none;
+}
 .wrap-aboutMe {
     display: flex;
     justify-content: space-between;
@@ -29,14 +32,33 @@
     top: 0;
     left: 0;
 }
+/* =================== */
 
 article.aboutMe {
-    background: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    padding: 30px;
+    /* background: rgba(0, 0, 0, 0.4); */
+    /* border-radius: 10px; */
+    /* padding: 30px; */
 
     color: #fff;
 }
+
+article.aboutMe h1 {
+    font-size: 4rem;
+    letter-spacing: 10px;
+    font-family: 'Baloo+Da+2';
+}
+.about_me > div {
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+/* =================== */
+/* article.aboutMe {
+    background: rgba(0, 0, 0, 0.4); 
+    border-radius: 10px;
+     padding: 30px;
+    color: #fff;
+} */
+
 .quote_block {
     display: flex;
 
@@ -130,6 +152,13 @@ article.aboutMe {
 
 /* mobile version */
 @media (max-width: 768px) {
+    article.aboutMe h1 {
+        font-size: 2rem;
+    }
+    .about_me > div {
+        font-size: 1rem;
+    }
+
     .quote_block,
     .quote_block h3 {
         font-size: 16px;

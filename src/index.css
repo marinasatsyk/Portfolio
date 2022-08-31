@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400|Baloo+Da+2:400,600&display=swap');
+
 * {
-    font-family: 'Montserrat', 'Roboto', sans-serif;
+    font-family: 'Oswald', 'Montserrat', 'Roboto', sans-serif;
     /* font-weight: 400; */
 }
 

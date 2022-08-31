@@ -8,9 +8,9 @@ const CV = () => {
     return (
         <motion.div
             className="wrap-cv"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.5, duration: 0.5 }}
+            // initial={{ opacity: 0, scale: 0 }}
+            // animate={{ opacity: 1, scale: 1 }}
+            // transition={{ delay: 0.5, duration: 0.5 }}
         >
             <article className="cv">
                 <header className="cv">
@@ -36,19 +36,67 @@ const CV = () => {
                 </section>
                 <div className="wrap-content-cv">
                     <div className="left-side-cv">
-                        <section className="hard-skills">
-                            <h4>Compétences techniques</h4>
-                            <div className="wrap-list-hard-skills">
+                        <motion.section
+                            className="hard-skills"
+                            // initial={{ opacity: 0, y: 50 }}
+                            // animate={{ opacity: 1, y: 1 }}
+                            // transition={{ delay: 0.5, duration: 0.5 }}
+                        >
+                            <motion.h4
+                                style={{ originX: 0 }}
+                                initial={{
+                                    opacity: 0,
+                                    scaleX: 0,
+                                }}
+                                animate={{ opacity: 1, scaleX: 1 }}
+                                transition={{ delay: 0.5, duration: 0.5 }}
+                            >
+                                Compétences techniques
+                            </motion.h4>
+                            <motion.div
+                                className="wrap-list-hard-skills"
+                                style={{ originX: 0 }}
+                                initial={{
+                                    opacity: 0,
+                                    scaleX: 0,
+                                }}
+                                animate={{ opacity: 1, scaleX: 1 }}
+                                transition={{ delay: 1, duration: 0.5 }}
+                            >
                                 <ul>
                                     {cv.hardSkills.map((skill, index) => (
                                         <li key={`${index}-skill`}>{skill}</li>
                                     ))}
                                 </ul>
-                            </div>
-                        </section>
-                        <section className="languages">
-                            <h4>Langages, librairies</h4>
-                            <div className="wrap-list-languages">
+                            </motion.div>
+                        </motion.section>
+                        <motion.section
+                            className="languages"
+                            // initial={{ opacity: 0, y: 50 }}
+                            // animate={{ opacity: 1, y: 1 }}
+                            // transition={{ delay: 1, duration: 0.5 }}
+                        >
+                            <motion.h4
+                                style={{ originX: 0 }}
+                                initial={{
+                                    opacity: 0,
+                                    scaleX: 0,
+                                }}
+                                animate={{ opacity: 1, scaleX: 1 }}
+                                transition={{ delay: 0.5, duration: 0.5 }}
+                            >
+                                Langages, librairies
+                            </motion.h4>
+                            <motion.div
+                                className="wrap-list-languages"
+                                style={{ originX: 0 }}
+                                initial={{
+                                    opacity: 0,
+                                    scaleX: 0,
+                                }}
+                                animate={{ opacity: 1, scaleX: 1 }}
+                                transition={{ delay: 1, duration: 0.5 }}
+                            >
                                 <ul>
                                     {cv.languages.map((group, index) => (
                                         <li key={`${index}-language`}>
@@ -63,11 +111,35 @@ const CV = () => {
                                         </li>
                                     ))}
                                 </ul>
-                            </div>
-                        </section>
-                        <section className="applications">
-                            <h4>Logiciels et environnements</h4>
-                            <div className="wrap-list-applications">
+                            </motion.div>
+                        </motion.section>
+                        <motion.section
+                            className="applications"
+                            // initial={{ opacity: 0, y: 50 }}
+                            // animate={{ opacity: 1, y: 1 }}
+                            // transition={{ delay: 1.5, duration: 0.5 }}
+                        >
+                            <motion.h4
+                                style={{ originX: 0 }}
+                                initial={{
+                                    opacity: 0,
+                                    scaleX: 0,
+                                }}
+                                animate={{ opacity: 1, scaleX: 1 }}
+                                transition={{ delay: 0.5, duration: 0.5 }}
+                            >
+                                Logiciels et environnements
+                            </motion.h4>
+                            <motion.div
+                                className="wrap-list-applications"
+                                style={{ originX: 0 }}
+                                initial={{
+                                    opacity: 0,
+                                    scaleX: 0,
+                                }}
+                                animate={{ opacity: 1, scaleX: 1 }}
+                                transition={{ delay: 1, duration: 0.5 }}
+                            >
                                 <ul>
                                     {cv.applications.map(
                                         (application, index) => (
@@ -77,13 +149,35 @@ const CV = () => {
                                         )
                                     )}
                                 </ul>
-                            </div>
-                        </section>
-                        <section className="skills-pro">
-                            <h4>
+                            </motion.div>
+                        </motion.section>
+                        <motion.section
+                            className="skills-pro"
+                            // initial={{ opacity: 0, y: 50 }}
+                            // animate={{ opacity: 1, y: 1 }}
+                            // transition={{ delay: 1.5, duration: 0.5 }}
+                        >
+                            <motion.h4
+                                style={{ originX: 0 }}
+                                initial={{
+                                    opacity: 0,
+                                    scaleX: 0,
+                                }}
+                                animate={{ opacity: 1, scaleX: 1 }}
+                                transition={{ delay: 0.5, duration: 0.5 }}
+                            >
                                 Compétences professionnelles et linguistiques
-                            </h4>
-                            <div className="wrap-list-skills-pro">
+                            </motion.h4>
+                            <motion.div
+                                className="wrap-list-skills-pro"
+                                style={{ originX: 0 }}
+                                initial={{
+                                    opacity: 0,
+                                    scaleX: 0,
+                                }}
+                                animate={{ opacity: 1, scaleX: 1 }}
+                                transition={{ delay: 1, duration: 0.5 }}
+                            >
                                 <ul>
                                     {cv.skillsPro.map((skill, index) => (
                                         <li
@@ -94,8 +188,17 @@ const CV = () => {
                                         </li>
                                     ))}
                                 </ul>
-                            </div>
-                            <div className="wrap-foreign-languages">
+                            </motion.div>
+                            <motion.div
+                                className="wrap-foreign-languages"
+                                style={{ originX: 0 }}
+                                initial={{
+                                    opacity: 0,
+                                    scaleX: 0,
+                                }}
+                                animate={{ opacity: 1, scaleX: 1 }}
+                                transition={{ delay: 1, duration: 0.5 }}
+                            >
                                 <ul className="foreign-languages">
                                     {cv.skillsLang.map((item, index) => (
                                         <li
@@ -128,17 +231,39 @@ const CV = () => {
                                         </li>
                                     ))}
                                 </ul>
-                            </div>
-                        </section>
+                            </motion.div>
+                        </motion.section>
                     </div>
                     <div className="right-side-cv">
-                        <section className="wrap-list-education">
-                            <h4>Formation</h4>
+                        <motion.section
+                            className="wrap-list-education"
+                            // initial={{ opacity: 0, y: 50 }}
+                            // animate={{ opacity: 1, y: 1 }}
+                            // transition={{ delay: 0.5, duration: 0.5 }}
+                        >
+                            <motion.h4
+                                style={{ originX: 0 }}
+                                initial={{
+                                    opacity: 0,
+                                    scaleX: 0,
+                                }}
+                                animate={{ opacity: 1, scaleX: 1 }}
+                                transition={{ delay: 0.5, duration: 0.5 }}
+                            >
+                                Formation
+                            </motion.h4>
 
                             {cv.education.map((item, index) => (
-                                <div
+                                <motion.div
                                     key={`${index}-institution-wrap`}
                                     className={`${item.class}-institution-wrap`}
+                                    style={{ originX: 0 }}
+                                    initial={{
+                                        opacity: 0,
+                                        scaleX: 0,
+                                    }}
+                                    animate={{ opacity: 1, scaleX: 1 }}
+                                    transition={{ delay: 1, duration: 0.5 }}
                                 >
                                     <div
                                         key={`${index}-institution`}
@@ -174,15 +299,39 @@ const CV = () => {
                                             {item.note}
                                         </div>
                                     )}
-                                </div>
+                                </motion.div>
                             ))}
-                        </section>
+                        </motion.section>
 
-                        <section className="experience-pro">
-                            <h4>Expériences Professionnelles</h4>
+                        <motion.section
+                            className="experience-pro"
+                            // initial={{ opacity: 0, y: 50 }}
+                            // animate={{ opacity: 1, y: 1 }}
+                            // transition={{ delay: 1, duration: 0.5 }}
+                        >
+                            <motion.h4
+                                style={{ originX: 0 }}
+                                initial={{
+                                    opacity: 0,
+                                    scaleX: 0,
+                                }}
+                                animate={{ opacity: 1, scaleX: 1 }}
+                                transition={{ delay: 0.5, duration: 0.5 }}
+                            >
+                                Expériences Professionnelles
+                            </motion.h4>
 
                             {cv.experience.map((item, index) => (
-                                <div className="wrap-exprience">
+                                <motion.div
+                                    className="wrap-exprience"
+                                    style={{ originX: 0 }}
+                                    initial={{
+                                        opacity: 0,
+                                        scaleX: 0,
+                                    }}
+                                    animate={{ opacity: 1, scaleX: 1 }}
+                                    transition={{ delay: 1, duration: 0.5 }}
+                                >
                                     {item.employer ? (
                                         <>
                                             <div
@@ -241,13 +390,36 @@ const CV = () => {
                                             </li>
                                         ))}
                                     </ul>
-                                </div>
+                                </motion.div>
                             ))}
-                        </section>
-                        <section className="wrap-list-skills-soft">
-                            <h4>Soft Skills</h4>
+                        </motion.section>
+                        <motion.section
+                            className="wrap-list-skills-soft"
+                            // initial={{ opacity: 0, y: 50 }}
+                            // animate={{ opacity: 1, y: 1 }}
+                            // transition={{ delay: 1.5, duration: 0.5 }}
+                        >
+                            <motion.h4
+                                style={{ originX: 0 }}
+                                initial={{
+                                    opacity: 0,
+                                    scaleX: 0,
+                                }}
+                                animate={{ opacity: 1, scaleX: 1 }}
+                                transition={{ delay: 0.5, duration: 0.5 }}
+                            >
+                                Soft Skills
+                            </motion.h4>
 
-                            <ul>
+                            <motion.ul
+                                style={{ originX: 0 }}
+                                initial={{
+                                    opacity: 0,
+                                    scaleX: 0,
+                                }}
+                                animate={{ opacity: 1, scaleX: 1 }}
+                                transition={{ delay: 1, duration: 0.5 }}
+                            >
                                 {cv.skillsSoft.map((skill, index) => (
                                     <li
                                         key={`${index}-skillSoft`}
@@ -256,8 +428,8 @@ const CV = () => {
                                         {skill}
                                     </li>
                                 ))}
-                            </ul>
-                        </section>
+                            </motion.ul>
+                        </motion.section>
                     </div>
                 </div>
             </article>

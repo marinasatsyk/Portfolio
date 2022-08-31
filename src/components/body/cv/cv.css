@@ -6,11 +6,12 @@
 article.cv {
     max-width: 1100px;
     margin: 15px auto;
-    background: rgba(0, 0, 0, 0.4);
+    /* background: rgba(0, 0, 0, 0.4); */
     color: white;
     border-radius: 10px;
     padding: 30px;
     letter-spacing: 1px;
+    font-family: 'Baloo+Da+2' !important;
 }
 /* header */
 article.cv header.cv {

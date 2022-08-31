@@ -27,16 +27,6 @@ const Footer = () => {
                                 <GitHubLogo className="gitHubLogo svg" />
                             </a>
                         </li>
-                        <li>
-                            <a
-                                rel="noreferrer"
-                                target="_blank"
-                                href="http://videezy.com/"
-                                className="licence"
-                            >
-                                Images d’archives gratuites par Videezy
-                            </a>
-                        </li>
                     </ul>
                 </nav>
             </footer>

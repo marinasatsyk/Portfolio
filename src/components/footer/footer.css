@@ -24,14 +24,30 @@ ul.footer-nav li {
     height: 50px;
 }
 
-/* footer svg {
-    fill: white;
-    transition: fill 0.3s filter 0.3s;
-} */
-footer svg:hover {
-    fill: #ffc600;
-    filter: drop-shadow(0px 0px 8px rgb(255 255 255));
+footer svg {
+    transition: transform 0.25s ease-in-out;
 }
+@media (min-width: 767px) {
+    footer svg:hover {
+        fill: #ffc600;
+        filter: drop-shadow(0px 0px 8px rgb(255 255 255));
+        animation: hover-svg 0.9s infinite;
+    }
+
+    @keyframes hover-svg {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+}
+
 .licence {
     font-size: 10px;
 }

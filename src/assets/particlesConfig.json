@@ -1,7 +1,7 @@
 {
     "background": {
         "color": {
-            "value": "#023968"
+            "value": "#021b39"
         }
     },
     "fullScreen": {
@@ -38,7 +38,7 @@
             "color": "#ffffff",
             "distance": 150,
             "enable": true,
-            "opacity": 0.5,
+            "opacity": 0.4,
             "width": 1
         },
         "collisions": {
@@ -51,7 +51,7 @@
                 "default": "bounce"
             },
             "random": false,
-            "speed": 3,
+            "speed": 2,
             "straight": false
         },
         "number": {

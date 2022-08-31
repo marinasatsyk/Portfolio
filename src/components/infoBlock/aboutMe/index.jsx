@@ -19,12 +19,44 @@ const AboutMe = () => {
     return (
         <motion.div
             id="wrapper-aboutMe-main"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.5, duration: 0.5 }}
+            // initial={{ opacity: 0, scale: 0 }}
+            // animate={{ opacity: 1, scale: 1 }}
+            // transition={{ delay: 0.5, duration: 0.3 }}
         >
-            {/* <img src={pc} alt="" className="pc" /> */}
-            <article className="wrap-aboutMe">
+            <article className="aboutMe">
+                <section className="about_me">
+                    <h1>
+                        {' '}
+                        <Typewriter
+                            onInit={(typewriter) => {
+                                typewriter
+                                    .pauseFor(500)
+                                    .typeString(`DARDÉ `)
+                                    .pauseFor(1000)
+                                    .typeString(`Marina`)
+                                    .stop()
+                                    .start();
+                            }}
+                        />
+                    </h1>
+
+                    <div style={{ fontFamily: 'Baloo Da 2' }}>
+                        <Typewriter
+                            onInit={(typewriter) => {
+                                typewriter
+                                    .pauseFor(5000)
+                                    .typeString(`Développeuse `)
+                                    .pauseFor(1000)
+                                    .typeString(`Front-End`)
+                                    .stop()
+                                    .start();
+                            }}
+                        />
+                    </div>
+                </section>
+            </article>
+
+            {/* <article className="wrap-aboutMe">
                 <article className="aboutMe">
                     <section className="about_me">
                         <div className="quote_block">
@@ -53,13 +85,7 @@ const AboutMe = () => {
                                 </div>
                             </div>
                             <div className="presentation-content">
-                                {/* <h4>{data_about_me.about[0][0]}</h4>
-                                <div className="content-label">
-                                    {data_about_me.about[0][1]}
-                                </div>
-                                <div className="content-content">
-                                    {data_about_me.about[0][2]}
-                                </div> */}
+                                
                                 <div className="content-label">
                                     <Typewriter
                                         onInit={(typewriter) => {
@@ -155,17 +181,10 @@ const AboutMe = () => {
                                 </div>
                             ))}
                         </div>
-                        {/* <div className="wrarp-description-item conclusion">
-                            <div className="img_about_wrap conclusion">
-                                <Hand className="about_icon" />
-                            </div>
-                            <div className="description-item-content wrarp-description">
-                                {data_about_me.conclusion}
-                            </div>
-                        </div> */}
+                        
                     </section>
                 </article>
-            </article>
+            </article> */}
         </motion.div>
     );
 };
