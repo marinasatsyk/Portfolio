@@ -17,6 +17,7 @@ import Error from './components/error';
 import Projects from './components/body/projects';
 import videoBg from './assets/videoBg.mp4';
 import { useEffect } from 'react';
+import particlesConfig from './assets/particlesConfig.json';
 import ParticlesBg from './components/particles';
 // import videoBg from './assets/Map.mp4';
 

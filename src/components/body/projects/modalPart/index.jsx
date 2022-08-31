@@ -19,7 +19,7 @@ const ModalPart = ({ item, isCardOpened, handleClick }) => {
                 <img src={item.localLink} alt="" className="cover-proj-modal" />
                 <article className="details-modal">
                     <header className="header-modal">
-                        <h1 className="title-details">Détailles du projet</h1>
+                        <h1 className="title-details">Détails du projet</h1>
                     </header>
                     <main className="main-modal">
                         <div className="challenge-wrap item-proj-modal">
