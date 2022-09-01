@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.7405e442.css",
-    "main.js": "/Portfolio/static/js/main.7a544af5.js",
-    "static/css/582.b8702035.chunk.css": "/Portfolio/static/css/582.b8702035.chunk.css",
-    "static/js/582.2ca42b90.chunk.js": "/Portfolio/static/js/582.2ca42b90.chunk.js",
+    "main.css": "/Portfolio/static/css/main.e3052c97.css",
+    "main.js": "/Portfolio/static/js/main.96522530.js",
+    "static/css/150.7112dd78.chunk.css": "/Portfolio/static/css/150.7112dd78.chunk.css",
+    "static/js/150.fa3a6d8f.chunk.js": "/Portfolio/static/js/150.fa3a6d8f.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/js/256.d89e85af.chunk.js": "/Portfolio/static/js/256.d89e85af.chunk.js",
     "static/media/8.png": "/Portfolio/static/media/8.f4916a64033877a12abd.png",
@@ -21,29 +21,22 @@
     "static/media/6.png": "/Portfolio/static/media/6.c242211307866291f4ed.png",
     "static/media/github-brands.svg": "/Portfolio/static/media/github-brands.ac73e25e5f3f26989830a2652baa3e20.svg",
     "static/media/globe-solid.svg": "/Portfolio/static/media/globe-solid.1bd1a2bf4425bc1f70d3ec4860446359.svg",
-    "static/media/handshake.svg": "/Portfolio/static/media/handshake.af0f582c2b4faac7414a52c0ebd27dd4.svg",
     "index.html": "/Portfolio/index.html",
     "static/media/projects.svg": "/Portfolio/static/media/projects.377089be6ba767220350322ccb05fc7e.svg",
-    "static/media/lightbulb.svg": "/Portfolio/static/media/lightbulb.c604103d9071c9a7f0f65e6aa46c9d6c.svg",
     "static/media/cv.svg": "/Portfolio/static/media/cv.fd91eb60edf6e9975e26d6cd6a85cf40.svg",
     "static/media/download.svg": "/Portfolio/static/media/download.11466158c669e4c4fc23ea0937e23196.svg",
     "static/media/home.svg": "/Portfolio/static/media/home.1d3284d565d988b79a1311f50c957aaa.svg",
-    "static/media/bullhorn.svg": "/Portfolio/static/media/bullhorn.184e25b165550151ac06429c4f65f3aa.svg",
-    "static/media/circle_question.svg": "/Portfolio/static/media/circle_question.8a5f5f30e822e01a4c5f9b3f045cd9b2.svg",
     "static/media/linkedin-brands.svg": "/Portfolio/static/media/linkedin-brands.61135682cba91944e407e87635291954.svg",
-    "static/media/quote-right.svg": "/Portfolio/static/media/quote-right.dbffdfb5e461d4900f871c69a7c15b36.svg",
-    "static/media/quote-left.svg": "/Portfolio/static/media/quote-left.74d217d0612befc16570f0ef60049a59.svg",
-    "static/media/briefcase.svg": "/Portfolio/static/media/briefcase.36af5efaa806cbf2c695207621cfc8df.svg",
     "static/media/circle-solid_dark.svg": "/Portfolio/static/media/circle-solid_dark.7ec572598497cc1987f8194ee29e4c7a.svg",
-    "main.7405e442.css.map": "/Portfolio/static/css/main.7405e442.css.map",
-    "main.7a544af5.js.map": "/Portfolio/static/js/main.7a544af5.js.map",
-    "582.b8702035.chunk.css.map": "/Portfolio/static/css/582.b8702035.chunk.css.map",
-    "582.2ca42b90.chunk.js.map": "/Portfolio/static/js/582.2ca42b90.chunk.js.map",
+    "main.e3052c97.css.map": "/Portfolio/static/css/main.e3052c97.css.map",
+    "main.96522530.js.map": "/Portfolio/static/js/main.96522530.js.map",
+    "150.7112dd78.chunk.css.map": "/Portfolio/static/css/150.7112dd78.chunk.css.map",
+    "150.fa3a6d8f.chunk.js.map": "/Portfolio/static/js/150.fa3a6d8f.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map",
     "256.d89e85af.chunk.js.map": "/Portfolio/static/js/256.d89e85af.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7405e442.css",
-    "static/js/main.7a544af5.js"
+    "static/css/main.e3052c97.css",
+    "static/js/main.96522530.js"
   ]
 }
