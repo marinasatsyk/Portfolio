@@ -6,12 +6,7 @@ import { motion } from 'framer-motion';
 import './cv.css';
 const CV = () => {
     return (
-        <motion.div
-            className="wrap-cv"
-            // initial={{ opacity: 0, scale: 0 }}
-            // animate={{ opacity: 1, scale: 1 }}
-            // transition={{ delay: 0.5, duration: 0.5 }}
-        >
+        <motion.div className="wrap-cv">
             <article className="cv">
                 <header className="cv">
                     <div className="presentation-group">
@@ -36,12 +31,7 @@ const CV = () => {
                 </section>
                 <div className="wrap-content-cv">
                     <div className="left-side-cv">
-                        <motion.section
-                            className="hard-skills"
-                            // initial={{ opacity: 0, y: 50 }}
-                            // animate={{ opacity: 1, y: 1 }}
-                            // transition={{ delay: 0.5, duration: 0.5 }}
-                        >
+                        <motion.section className="hard-skills">
                             <motion.h4
                                 style={{ originX: 0 }}
                                 initial={{
@@ -55,12 +45,10 @@ const CV = () => {
                             </motion.h4>
                             <motion.div
                                 className="wrap-list-hard-skills"
-                                style={{ originX: 0 }}
                                 initial={{
                                     opacity: 0,
-                                    scaleX: 0,
                                 }}
-                                animate={{ opacity: 1, scaleX: 1 }}
+                                animate={{ opacity: 1 }}
                                 transition={{ delay: 1, duration: 0.5 }}
                             >
                                 <ul>
@@ -70,31 +58,22 @@ const CV = () => {
                                 </ul>
                             </motion.div>
                         </motion.section>
-                        <motion.section
-                            className="languages"
-                            // initial={{ opacity: 0, y: 50 }}
-                            // animate={{ opacity: 1, y: 1 }}
-                            // transition={{ delay: 1, duration: 0.5 }}
-                        >
+                        <motion.section className="languages">
                             <motion.h4
-                                style={{ originX: 0 }}
                                 initial={{
                                     opacity: 0,
-                                    scaleX: 0,
                                 }}
-                                animate={{ opacity: 1, scaleX: 1 }}
+                                animate={{ opacity: 1 }}
                                 transition={{ delay: 0.5, duration: 0.5 }}
                             >
                                 Langages, librairies
                             </motion.h4>
                             <motion.div
                                 className="wrap-list-languages"
-                                style={{ originX: 0 }}
                                 initial={{
                                     opacity: 0,
-                                    scaleX: 0,
                                 }}
-                                animate={{ opacity: 1, scaleX: 1 }}
+                                animate={{ opacity: 1 }}
                                 transition={{ delay: 1, duration: 0.5 }}
                             >
                                 <ul>
@@ -113,12 +92,7 @@ const CV = () => {
                                 </ul>
                             </motion.div>
                         </motion.section>
-                        <motion.section
-                            className="applications"
-                            // initial={{ opacity: 0, y: 50 }}
-                            // animate={{ opacity: 1, y: 1 }}
-                            // transition={{ delay: 1.5, duration: 0.5 }}
-                        >
+                        <motion.section className="applications">
                             <motion.h4
                                 style={{ originX: 0 }}
                                 initial={{
@@ -132,12 +106,10 @@ const CV = () => {
                             </motion.h4>
                             <motion.div
                                 className="wrap-list-applications"
-                                style={{ originX: 0 }}
                                 initial={{
                                     opacity: 0,
-                                    scaleX: 0,
                                 }}
-                                animate={{ opacity: 1, scaleX: 1 }}
+                                animate={{ opacity: 1 }}
                                 transition={{ delay: 1, duration: 0.5 }}
                             >
                                 <ul>
@@ -151,12 +123,7 @@ const CV = () => {
                                 </ul>
                             </motion.div>
                         </motion.section>
-                        <motion.section
-                            className="skills-pro"
-                            // initial={{ opacity: 0, y: 50 }}
-                            // animate={{ opacity: 1, y: 1 }}
-                            // transition={{ delay: 1.5, duration: 0.5 }}
-                        >
+                        <motion.section className="skills-pro">
                             <motion.h4
                                 style={{ originX: 0 }}
                                 initial={{
@@ -170,7 +137,6 @@ const CV = () => {
                             </motion.h4>
                             <motion.div
                                 className="wrap-list-skills-pro"
-                                style={{ originX: 0 }}
                                 initial={{
                                     opacity: 0,
                                     scaleX: 0,
@@ -191,12 +157,10 @@ const CV = () => {
                             </motion.div>
                             <motion.div
                                 className="wrap-foreign-languages"
-                                style={{ originX: 0 }}
                                 initial={{
                                     opacity: 0,
-                                    scaleX: 0,
                                 }}
-                                animate={{ opacity: 1, scaleX: 1 }}
+                                animate={{ opacity: 1 }}
                                 transition={{ delay: 1, duration: 0.5 }}
                             >
                                 <ul className="foreign-languages">
@@ -235,12 +199,7 @@ const CV = () => {
                         </motion.section>
                     </div>
                     <div className="right-side-cv">
-                        <motion.section
-                            className="wrap-list-education"
-                            // initial={{ opacity: 0, y: 50 }}
-                            // animate={{ opacity: 1, y: 1 }}
-                            // transition={{ delay: 0.5, duration: 0.5 }}
-                        >
+                        <motion.section className="wrap-list-education">
                             <motion.h4
                                 style={{ originX: 0 }}
                                 initial={{
@@ -257,12 +216,10 @@ const CV = () => {
                                 <motion.div
                                     key={`${index}-institution-wrap`}
                                     className={`${item.class}-institution-wrap`}
-                                    style={{ originX: 0 }}
                                     initial={{
                                         opacity: 0,
-                                        scaleX: 0,
                                     }}
-                                    animate={{ opacity: 1, scaleX: 1 }}
+                                    animate={{ opacity: 1 }}
                                     transition={{ delay: 1, duration: 0.5 }}
                                 >
                                     <div
@@ -303,12 +260,7 @@ const CV = () => {
                             ))}
                         </motion.section>
 
-                        <motion.section
-                            className="experience-pro"
-                            // initial={{ opacity: 0, y: 50 }}
-                            // animate={{ opacity: 1, y: 1 }}
-                            // transition={{ delay: 1, duration: 0.5 }}
-                        >
+                        <motion.section className="experience-pro">
                             <motion.h4
                                 style={{ originX: 0 }}
                                 initial={{
@@ -324,12 +276,10 @@ const CV = () => {
                             {cv.experience.map((item, index) => (
                                 <motion.div
                                     className="wrap-exprience"
-                                    style={{ originX: 0 }}
                                     initial={{
                                         opacity: 0,
-                                        scaleX: 0,
                                     }}
-                                    animate={{ opacity: 1, scaleX: 1 }}
+                                    animate={{ opacity: 1 }}
                                     transition={{ delay: 1, duration: 0.5 }}
                                 >
                                     {item.employer ? (
@@ -393,12 +343,7 @@ const CV = () => {
                                 </motion.div>
                             ))}
                         </motion.section>
-                        <motion.section
-                            className="wrap-list-skills-soft"
-                            // initial={{ opacity: 0, y: 50 }}
-                            // animate={{ opacity: 1, y: 1 }}
-                            // transition={{ delay: 1.5, duration: 0.5 }}
-                        >
+                        <motion.section className="wrap-list-skills-soft">
                             <motion.h4
                                 style={{ originX: 0 }}
                                 initial={{
@@ -412,12 +357,10 @@ const CV = () => {
                             </motion.h4>
 
                             <motion.ul
-                                style={{ originX: 0 }}
                                 initial={{
                                     opacity: 0,
-                                    scaleX: 0,
                                 }}
-                                animate={{ opacity: 1, scaleX: 1 }}
+                                animate={{ opacity: 1 }}
                                 transition={{ delay: 1, duration: 0.5 }}
                             >
                                 {cv.skillsSoft.map((skill, index) => (

@@ -59,7 +59,7 @@ export const projects = [
             ],
         },
         tecnologies: ['js', 'html', 'css', 'sass', 'eslint'],
-        externalLink: 'https://marinasatsyk.github.io/GameOn-website-FR/',
+        externalLink: '',
         gitHub: 'https://github.com/marinasatsyk/GameOn-website-FR.git',
     },
     {
