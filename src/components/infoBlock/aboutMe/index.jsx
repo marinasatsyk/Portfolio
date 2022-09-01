@@ -1,28 +1,10 @@
-import myPhoto from '../../../assets/photos_CV_2.png';
-import { data_about_me } from '../../data_about';
-import quote_l from '../../../assets/quote-left.svg';
-import quote_r from '../../../assets/quote-right.svg';
-import { ReactComponent as Question } from '../../../assets/circle_question.svg';
-import { ReactComponent as Proposition } from '../../../assets/bullhorn.svg';
-import { ReactComponent as Idea } from '../../../assets/lightbulb.svg';
-import { ReactComponent as Enthousiasme } from '../../../assets/briefcase.svg';
-import { ReactComponent as Hand } from '../../../assets/handshake.svg';
 import './aboutMe.css';
-import { useLocation } from 'react-router';
 import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
 
 const AboutMe = () => {
-    // let url = useLocation();
-    // console.log(url);
-
     return (
-        <motion.div
-            id="wrapper-aboutMe-main"
-            // initial={{ opacity: 0, scale: 0 }}
-            // animate={{ opacity: 1, scale: 1 }}
-            // transition={{ delay: 0.5, duration: 0.3 }}
-        >
+        <div id="wrapper-aboutMe-main">
             <article className="aboutMe">
                 <section className="about_me">
                     <h1>
@@ -30,9 +12,9 @@ const AboutMe = () => {
                         <Typewriter
                             onInit={(typewriter) => {
                                 typewriter
-                                    .pauseFor(500)
+                                    .pauseFor(150)
                                     .typeString(`DARDÉ `)
-                                    .pauseFor(1000)
+                                    .pauseFor(100)
                                     .typeString(`Marina`)
                                     .stop()
                                     .start();
@@ -40,152 +22,17 @@ const AboutMe = () => {
                         />
                     </h1>
 
-                    <div style={{ fontFamily: 'Baloo Da 2' }}>
-                        <Typewriter
-                            onInit={(typewriter) => {
-                                typewriter
-                                    .pauseFor(5000)
-                                    .typeString(`Développeuse `)
-                                    .pauseFor(1000)
-                                    .typeString(`Front-End`)
-                                    .stop()
-                                    .start();
-                            }}
-                        />
-                    </div>
+                    <motion.div
+                        style={{ fontFamily: 'Baloo Da 2' }}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 2.3, duration: 1 }}
+                    >
+                        Développeuse Front-End
+                    </motion.div>
                 </section>
             </article>
-
-            {/* <article className="wrap-aboutMe">
-                <article className="aboutMe">
-                    <section className="about_me">
-                        <div className="quote_block">
-                            <span className="wrap_quote l">
-                                <img src={quote_l} alt="" className="quote" />
-                            </span>
-
-                            <h3 className="content-quote">
-                                {data_about_me.quote.text}
-                            </h3>
-                            <span className="wrap_quote r">
-                                <img src={quote_r} alt="" className="quote" />
-                            </span>
-
-                            <div className="author">
-                                {data_about_me.quote.author}
-                            </div>
-                        </div>
-                    </section>
-
-                    <section id="wrap-content">
-                        <div className="presentation">
-                            <div className="wrap-photo">
-                                <div className="photo-container">
-                                    <img src={myPhoto} alt="" />
-                                </div>
-                            </div>
-                            <div className="presentation-content">
-                                
-                                <div className="content-label">
-                                    <Typewriter
-                                        onInit={(typewriter) => {
-                                            typewriter
-                                                .typeString(
-                                                    `${data_about_me.about[0][0]}`
-                                                )
-                                                .pauseFor(2500)
-                                                .typeString(
-                                                    `${data_about_me.about[0][1]}`
-                                                )
-                                                .stop()
-                                                .start();
-                                        }}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="wrap-all-description">
-                            {data_about_me.about[1].map((item, index) => (
-                                <div
-                                    className="wrarp-description-item"
-                                    key={index}
-                                >
-                                    <div
-                                        className="description-item-title wrarp-description"
-                                        key={`${index}-title`}
-                                    >
-                                        {item.id === 1 && (
-                                            <div
-                                                className="img_about_wrap"
-                                                key={`${index}-${item.id}-wrap`}
-                                            >
-                                                <Question
-                                                    key={`${index}-${item.id}`}
-                                                    className="about_icon"
-                                                />
-                                            </div>
-                                        )}
-                                        {item.id === 2 && (
-                                            <div
-                                                className="img_about_wrap"
-                                                key={`${index}-${item.id}-wrap`}
-                                            >
-                                                <Idea
-                                                    key={`${index}-${item.id}`}
-                                                    className="about_icon"
-                                                />
-                                            </div>
-                                        )}
-                                        {item.id === 3 && (
-                                            <div
-                                                className="img_about_wrap"
-                                                key={`${index}-${item.id}-wrap`}
-                                            >
-                                                <Enthousiasme
-                                                    key={`${index}-${item.id}`}
-                                                    className="about_icon "
-                                                />
-                                            </div>
-                                        )}
-                                        {item.id === 4 && (
-                                            <div
-                                                className="img_about_wrap"
-                                                key={`${index}-${item.id}-wrap`}
-                                            >
-                                                <Proposition
-                                                    key={`${index}-${item.id}`}
-                                                    className="about_icon"
-                                                />
-                                            </div>
-                                        )}
-                                        {item.id === 5 && (
-                                            <div
-                                                className="img_about_wrap conclusion"
-                                                key={`${index}-${item.id}-wrap`}
-                                            >
-                                                <Hand
-                                                    key={`${index}-${item.id}`}
-                                                    className="about_icon"
-                                                />
-                                            </div>
-                                        )}
-                                    </div>
-
-                                    <div
-                                        className="description-item-content wrarp-description"
-                                        key={`${index}-content`}
-                                    >
-                                        {item.content}
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                        
-                    </section>
-                </article>
-            </article> */}
-        </motion.div>
+        </div>
     );
 };
 

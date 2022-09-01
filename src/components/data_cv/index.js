@@ -69,7 +69,7 @@ export const cv = {
         {
             period: `2021-2022`,
             name: `Openclassrooms`,
-            profession: `Développeur concepteur logiciel`,
+            profession: `Développeur Front-End`,
             degree: `Diplôme RNCP niveau 6 (bac+3/4)`,
             note: ``,
             class: 'first',
