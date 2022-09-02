@@ -16,9 +16,7 @@ export const projects = [
         name: 'Reservia',
         localLink: p1,
         description: {
-            challenge: [
-                `Transformer une maquette en site web avec HTML & CSS.`,
-            ],
+            challenge: [`Transformer une maquette en site web avec HTML & CSS`],
             solution: [
                 `Implémenter une interface responsive`,
                 `Intégrer du contenu conformément à une maquette`,
@@ -33,7 +31,7 @@ export const projects = [
         name: 'ohmyfood',
         localLink: p2,
         description: {
-            challenge: [`Dynamiser une page web avec des animations CSS.`],
+            challenge: [`Dynamiser une page web avec des animations CSS`],
             solution: [
                 `Utiliser un système de gestion de versions pour le suivi du projet et son hébergement`,
                 `Mettre en œuvre des effets CSS graphiques avancés`,
@@ -68,13 +66,13 @@ export const projects = [
         localLink: p4,
         description: {
             challenge: [
-                `Créer un site accessible pour une plateforme de photographes.`,
+                `Créer un site accessible pour une plateforme de photographes`,
             ],
             solution: [
                 `Assurer l'accessibilité d'un site web`,
                 `Gérer les évènements d'un site avec JavaScript`,
-                `Développer une application web modulaire avec Factory design pattern`,
-                `Ecrire du code JavaScript maintenable en utilisant la programmation orienté objet`,
+                `Développer une application web modulaire avec le Factory design pattern`,
+                `Ecrire du code JavaScript maintenable en utilisant la Programmation orientée objet`,
             ],
         },
         tecnologies: ['js', 'html', 'css', 'sass', 'eslint', 'github'],
@@ -86,11 +84,11 @@ export const projects = [
         name: 'Les petits plats',
         localLink: p5,
         description: {
-            challenge: [`Développer un algorithme de recherche en JavaScript.`],
+            challenge: [`Développer un algorithme de recherche en JavaScript`],
             solution: [
                 `Analyser un problème informatique`,
                 `Développer un algorithme pour résoudre un problème`,
-                `Le projet a été réalisée  en appliquant Programmation orienté objet`,
+                `Le projet a été réalisé  en appliquant la Programmation orientée objet`,
             ],
         },
         tecnologies: ['js', 'html', 'css', 'sass', 'eslint', 'github'],
