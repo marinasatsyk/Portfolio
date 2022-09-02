@@ -67,6 +67,7 @@ nav li {
     text-decoration: none;
     color: #282c34;
     font-weight: bold;
+    font-size: 15px;
 }
 .mobile {
     fill: white;

@@ -53,7 +53,7 @@ const ModalPart = ({ item, isCardOpened, handleClick }) => {
                             </ul>
                         </div>
                         <div className="tecno-wrap item-proj-modal">
-                            <h4>Técnologies</h4>
+                            <h4>Technologies</h4>
                             <ul className="tecno-wrap-items">
                                 {tecnologies.map((item, index) => (
                                     <li

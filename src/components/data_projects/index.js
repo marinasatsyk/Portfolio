@@ -102,7 +102,7 @@ export const projects = [
         name: 'Billed',
         localLink: p6,
         description: {
-            challenge: [`Débugger et testez un SaaS RH`],
+            challenge: [`Débugger et tester un SaaS RH`],
             solution: [
                 `Ecrire des tests unitaires avec JavaScript`,
                 `Débugger une application web avec le Chrome Debugger`,

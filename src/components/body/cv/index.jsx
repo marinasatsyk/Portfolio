@@ -353,7 +353,7 @@ const CV = () => {
                                 animate={{ opacity: 1, scaleX: 1 }}
                                 transition={{ delay: 0.5, duration: 0.5 }}
                             >
-                                Soft Skills
+                                Qualités
                             </motion.h4>
 
                             <motion.ul
