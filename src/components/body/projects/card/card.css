@@ -106,16 +106,15 @@ ul.solution-wrap-items {
 
 @media (max-width: 768px) {
     .wrap-cover-proj-modal {
-        max-height: unset;
+        max-height: 95vh;
         max-width: unset;
         width: 100vw;
     }
 
     .details-modal {
-        position: unset;
+        position: sticky;
         flex-direction: column;
         justify-content: space-between;
-        /* height: unset; */
     }
 
     .main-modal {
