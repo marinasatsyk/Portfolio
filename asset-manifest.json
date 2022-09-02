@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.e3052c97.css",
-    "main.js": "/Portfolio/static/js/main.90931639.js",
+    "main.js": "/Portfolio/static/js/main.76d1574f.js",
     "static/css/150.edfe0d39.chunk.css": "/Portfolio/static/css/150.edfe0d39.chunk.css",
-    "static/js/150.fa94e38d.chunk.js": "/Portfolio/static/js/150.fa94e38d.chunk.js",
+    "static/js/150.a3f6bf44.chunk.js": "/Portfolio/static/js/150.a3f6bf44.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/js/256.d89e85af.chunk.js": "/Portfolio/static/js/256.d89e85af.chunk.js",
     "static/media/8.png": "/Portfolio/static/media/8.f4916a64033877a12abd.png",
@@ -29,14 +29,14 @@
     "static/media/linkedin-brands.svg": "/Portfolio/static/media/linkedin-brands.61135682cba91944e407e87635291954.svg",
     "static/media/circle-solid_dark.svg": "/Portfolio/static/media/circle-solid_dark.7ec572598497cc1987f8194ee29e4c7a.svg",
     "main.e3052c97.css.map": "/Portfolio/static/css/main.e3052c97.css.map",
-    "main.90931639.js.map": "/Portfolio/static/js/main.90931639.js.map",
+    "main.76d1574f.js.map": "/Portfolio/static/js/main.76d1574f.js.map",
     "150.edfe0d39.chunk.css.map": "/Portfolio/static/css/150.edfe0d39.chunk.css.map",
-    "150.fa94e38d.chunk.js.map": "/Portfolio/static/js/150.fa94e38d.chunk.js.map",
+    "150.a3f6bf44.chunk.js.map": "/Portfolio/static/js/150.a3f6bf44.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map",
     "256.d89e85af.chunk.js.map": "/Portfolio/static/js/256.d89e85af.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e3052c97.css",
-    "static/js/main.90931639.js"
+    "static/js/main.76d1574f.js"
   ]
 }
