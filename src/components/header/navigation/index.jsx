@@ -73,7 +73,7 @@ const Navigation = () => {
                         }}
                         transition={{ type: 'spring', stiffness: 300 }}
                     >
-                        <NavLink
+                        {/* <NavLink
                             to="/cv"
                             style={({ isActive }) =>
                                 isActive ? activeStyle : undefined
@@ -84,7 +84,7 @@ const Navigation = () => {
                             ) : (
                                 <CVlogo className="cv-logo mobile" />
                             )}
-                        </NavLink>
+                        </NavLink> */}
                     </motion.li>
                     {/* <motion.li>
                         <NavLink
