@@ -29,7 +29,6 @@ const Navigation = () => {
     const dimension = useWindowDimensions();
     return (
         <div className="wrap-nav">
-            {console.log(dimension)}
             {dimension.width > 768 && (
                 <div className="logo-wrap">
                     <img src={logo} alt="logo" className="logo" />
@@ -73,7 +72,7 @@ const Navigation = () => {
                         }}
                         transition={{ type: 'spring', stiffness: 300 }}
                     >
-                        {/* <NavLink
+                        <NavLink
                             to="/cv"
                             style={({ isActive }) =>
                                 isActive ? activeStyle : undefined
@@ -84,7 +83,7 @@ const Navigation = () => {
                             ) : (
                                 <CVlogo className="cv-logo mobile" />
                             )}
-                        </NavLink> */}
+                        </NavLink>
                     </motion.li>
                     {/* <motion.li>
                         <NavLink

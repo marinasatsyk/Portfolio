@@ -41,7 +41,7 @@ const CV = () => {
                                 animate={{ opacity: 1, scaleX: 1 }}
                                 transition={{ delay: 0.5, duration: 0.5 }}
                             >
-                                Compétences techniques
+                                Compétences
                             </motion.h4>
                             <motion.div
                                 className="wrap-list-hard-skills"
@@ -79,9 +79,9 @@ const CV = () => {
                                 <ul>
                                     {cv.languages.map((group, index) => (
                                         <li key={`${index}-language`}>
-                                            {group.map((item) => (
+                                            {group.map((item, index) => (
                                                 <span
-                                                    key={item}
+                                                    key={`${item}-${index}`}
                                                     className={item}
                                                 >
                                                     {item}
@@ -123,6 +123,221 @@ const CV = () => {
                                 </ul>
                             </motion.div>
                         </motion.section>
+                    </div>
+                    <div className="right-side-cv">
+                        <motion.section className="wrap-list-education">
+                            <motion.h4
+                                style={{ originX: 0 }}
+                                initial={{
+                                    opacity: 0,
+                                    scaleX: 0,
+                                }}
+                                animate={{ opacity: 1, scaleX: 1 }}
+                                transition={{ delay: 0.5, duration: 0.5 }}
+                            >
+                                Formations
+                            </motion.h4>
+
+                            {cv.education.map((item, index) =>
+                                item.class === 'first' ? (
+                                    <motion.div
+                                        key={`${index}-institution-wrap`}
+                                        className={`${item.class}-institution-wrap`}
+                                        initial={{
+                                            opacity: 0,
+                                        }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ delay: 1, duration: 0.5 }}
+                                    >
+                                        <div
+                                            key={`${index}-institution`}
+                                            className="institution"
+                                        >
+                                            <span
+                                                key={`${index}-institution-year`}
+                                                className="year-education"
+                                            >
+                                                {item.period}
+                                            </span>
+
+                                            <span
+                                                key={`${index}-institution-profession`}
+                                                className="profession-eductation"
+                                            >
+                                                {item.profession}
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            key={`${index}-institution-title`}
+                                            className="title-education"
+                                        >
+                                            {item.name}
+                                        </div>
+
+                                        <div
+                                            key={`${index}-degree`}
+                                            className="degree"
+                                        >
+                                            {item.degree}
+                                        </div>
+                                        {item.note && (
+                                            <div key={`${index}-note`}>
+                                                {item.note}
+                                            </div>
+                                        )}
+                                    </motion.div>
+                                ) : (
+                                    <motion.div
+                                        key={`${index}-institution-wrap`}
+                                        className={`${item.class}-institution-wrap`}
+                                        initial={{
+                                            opacity: 0,
+                                        }}
+                                        animate={{ opacity: 1 }}
+                                        transition={{ delay: 1, duration: 0.5 }}
+                                    >
+                                        <div
+                                            key={`${index}-institution`}
+                                            className="institution"
+                                        >
+                                            <span
+                                                key={`${index}-institution-year`}
+                                                className="year-education"
+                                            >
+                                                {item.period}
+                                            </span>
+                                            <span
+                                                key={`${index}-degree`}
+                                                className="degree"
+                                            >
+                                                {item.degree},{` `}
+                                            </span>
+                                            <span
+                                                key={`${index}-institution-title`}
+                                                className="title-education"
+                                            >
+                                                {item.name}
+                                            </span>
+                                        </div>
+
+                                        <div
+                                            key={`${index}-institution-profession`}
+                                            className="profession-eductation"
+                                        >
+                                            {item.profession}
+                                        </div>
+                                        {item.note && (
+                                            <div key={`${index}-note`}>
+                                                {item.note}
+                                            </div>
+                                        )}
+                                    </motion.div>
+                                )
+                            )}
+                        </motion.section>
+
+                        <motion.section className="experience-pro">
+                            <motion.h4
+                                style={{ originX: 0 }}
+                                initial={{
+                                    opacity: 0,
+                                    scaleX: 0,
+                                }}
+                                animate={{ opacity: 1, scaleX: 1 }}
+                                transition={{ delay: 0.5, duration: 0.5 }}
+                            >
+                                Expériences
+                            </motion.h4>
+
+                            {cv.experience.map((item, index) => (
+                                <motion.div
+                                    className="wrap-exprience"
+                                    initial={{
+                                        opacity: 0,
+                                    }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ delay: 1, duration: 0.5 }}
+                                >
+                                    {item.employer ? (
+                                        <>
+                                            <div
+                                                key={`${index}-employer-period`}
+                                            >
+                                                {item.period}
+                                            </div>
+
+                                            <div
+                                                key={`${index}-employer-experience`}
+                                                className="employer-experience"
+                                            >
+                                                <span
+                                                    key={`${index}-title-experience`}
+                                                    className="title-experience"
+                                                >
+                                                    {item.title},
+                                                </span>
+                                                <span
+                                                    key={`${index}-employer-title`}
+                                                >
+                                                    {' '}
+                                                    {item.employer}
+                                                </span>
+                                            </div>
+                                        </>
+                                    ) : (
+                                        <>
+                                            <div
+                                                key={`${index}-title-experience`}
+                                                className="title-experience"
+                                            >
+                                                <span
+                                                    key={`${index}-employer-title`}
+                                                >
+                                                    {item.title}
+                                                </span>
+                                                <span
+                                                    key={`${index}-employer-period`}
+                                                >
+                                                    {item.period}
+                                                </span>
+                                            </div>
+                                        </>
+                                    )}
+                                </motion.div>
+                            ))}
+                        </motion.section>
+                        <motion.section className="wrap-list-skills-soft">
+                            <motion.h4
+                                style={{ originX: 0 }}
+                                initial={{
+                                    opacity: 0,
+                                    scaleX: 0,
+                                }}
+                                animate={{ opacity: 1, scaleX: 1 }}
+                                transition={{ delay: 0.5, duration: 0.5 }}
+                            >
+                                Qualités
+                            </motion.h4>
+
+                            <motion.ul
+                                initial={{
+                                    opacity: 0,
+                                }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: 1, duration: 0.5 }}
+                            >
+                                {cv.skillsSoft.map((skill, index) => (
+                                    <li
+                                        key={`${index}-skillSoft`}
+                                        className="skillSoft"
+                                    >
+                                        {skill}
+                                    </li>
+                                ))}
+                            </motion.ul>
+                        </motion.section>
+
                         <motion.section className="skills-pro">
                             <motion.h4
                                 style={{ originX: 0 }}
@@ -133,7 +348,7 @@ const CV = () => {
                                 animate={{ opacity: 1, scaleX: 1 }}
                                 transition={{ delay: 0.5, duration: 0.5 }}
                             >
-                                Compétences professionnelles et linguistiques
+                                Compétences linguistiques
                             </motion.h4>
                             <motion.div
                                 className="wrap-list-skills-pro"
@@ -143,18 +358,7 @@ const CV = () => {
                                 }}
                                 animate={{ opacity: 1, scaleX: 1 }}
                                 transition={{ delay: 1, duration: 0.5 }}
-                            >
-                                <ul>
-                                    {cv.skillsPro.map((skill, index) => (
-                                        <li
-                                            key={`${index}-skillPro`}
-                                            className="skillPro"
-                                        >
-                                            {skill}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </motion.div>
+                            ></motion.div>
                             <motion.div
                                 className="wrap-foreign-languages"
                                 initial={{
@@ -189,189 +393,13 @@ const CV = () => {
                                             >
                                                 <RatingScale
                                                     scaleValue={item.points}
-                                                    key="rank-language"
+                                                    Pkey="rank-language"
                                                 />
                                             </div>
                                         </li>
                                     ))}
                                 </ul>
                             </motion.div>
-                        </motion.section>
-                    </div>
-                    <div className="right-side-cv">
-                        <motion.section className="wrap-list-education">
-                            <motion.h4
-                                style={{ originX: 0 }}
-                                initial={{
-                                    opacity: 0,
-                                    scaleX: 0,
-                                }}
-                                animate={{ opacity: 1, scaleX: 1 }}
-                                transition={{ delay: 0.5, duration: 0.5 }}
-                            >
-                                Formation
-                            </motion.h4>
-
-                            {cv.education.map((item, index) => (
-                                <motion.div
-                                    key={`${index}-institution-wrap`}
-                                    className={`${item.class}-institution-wrap`}
-                                    initial={{
-                                        opacity: 0,
-                                    }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ delay: 1, duration: 0.5 }}
-                                >
-                                    <div
-                                        key={`${index}-institution`}
-                                        className="institution"
-                                    >
-                                        <span
-                                            key={`${index}-institution-year`}
-                                            className="year-education"
-                                        >
-                                            {item.period}
-                                        </span>
-                                        <span
-                                            key={`${index}-institution-title`}
-                                            className="title-education"
-                                        >
-                                            {item.name}
-                                        </span>
-                                    </div>
-                                    <div
-                                        key={`${index}-institution-profession`}
-                                        className="profession-eductation"
-                                    >
-                                        {item.profession}
-                                    </div>
-                                    <div
-                                        key={`${index}-degree`}
-                                        className="degree"
-                                    >
-                                        {item.degree}
-                                    </div>
-                                    {item.note && (
-                                        <div key={`${index}-note`}>
-                                            {item.note}
-                                        </div>
-                                    )}
-                                </motion.div>
-                            ))}
-                        </motion.section>
-
-                        <motion.section className="experience-pro">
-                            <motion.h4
-                                style={{ originX: 0 }}
-                                initial={{
-                                    opacity: 0,
-                                    scaleX: 0,
-                                }}
-                                animate={{ opacity: 1, scaleX: 1 }}
-                                transition={{ delay: 0.5, duration: 0.5 }}
-                            >
-                                Expériences Professionnelles
-                            </motion.h4>
-
-                            {cv.experience.map((item, index) => (
-                                <motion.div
-                                    className="wrap-exprience"
-                                    initial={{
-                                        opacity: 0,
-                                    }}
-                                    animate={{ opacity: 1 }}
-                                    transition={{ delay: 1, duration: 0.5 }}
-                                >
-                                    {item.employer ? (
-                                        <>
-                                            <div
-                                                key={`${index}-title-experience`}
-                                                className="title-experience"
-                                            >
-                                                {item.title}
-                                            </div>
-                                            <div
-                                                key={`${index}-employer-experience`}
-                                                className="employer-experience"
-                                            >
-                                                <span
-                                                    key={`${index}-employer-title`}
-                                                >
-                                                    {' '}
-                                                    {item.employer}
-                                                </span>
-                                                <span
-                                                    key={`${index}-employer-period`}
-                                                >
-                                                    {' '}
-                                                    {item.period}
-                                                </span>
-                                            </div>
-                                        </>
-                                    ) : (
-                                        <>
-                                            <div
-                                                key={`${index}-title-experience`}
-                                                className="title-experience"
-                                            >
-                                                <span
-                                                    key={`${index}-employer-title`}
-                                                >
-                                                    {item.title}
-                                                </span>
-                                                <span
-                                                    key={`${index}-employer-period`}
-                                                >
-                                                    {item.period}
-                                                </span>
-                                            </div>
-                                        </>
-                                    )}
-                                    <ul
-                                        key={`${index}-list-experience`}
-                                        className="list-experience"
-                                    >
-                                        {item.list.map((item, index) => (
-                                            <li
-                                                key={`${index}-list-experience-item`}
-                                                className="list-experience-item"
-                                            >
-                                                {item}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </motion.div>
-                            ))}
-                        </motion.section>
-                        <motion.section className="wrap-list-skills-soft">
-                            <motion.h4
-                                style={{ originX: 0 }}
-                                initial={{
-                                    opacity: 0,
-                                    scaleX: 0,
-                                }}
-                                animate={{ opacity: 1, scaleX: 1 }}
-                                transition={{ delay: 0.5, duration: 0.5 }}
-                            >
-                                Qualités
-                            </motion.h4>
-
-                            <motion.ul
-                                initial={{
-                                    opacity: 0,
-                                }}
-                                animate={{ opacity: 1 }}
-                                transition={{ delay: 1, duration: 0.5 }}
-                            >
-                                {cv.skillsSoft.map((skill, index) => (
-                                    <li
-                                        key={`${index}-skillSoft`}
-                                        className="skillSoft"
-                                    >
-                                        {skill}
-                                    </li>
-                                ))}
-                            </motion.ul>
                         </motion.section>
                     </div>
                 </div>

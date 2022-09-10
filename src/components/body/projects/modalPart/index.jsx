@@ -23,7 +23,7 @@ const ModalPart = ({ item, isCardOpened, handleClick }) => {
                     </header>
                     <main className="main-modal">
                         <div className="challenge-wrap item-proj-modal">
-                            <h4>Défi</h4>
+                            <h4>Mission</h4>
                             <ul className="solution-wrap-items">
                                 {challenge.map((item, index) => (
                                     <li
@@ -38,7 +38,7 @@ const ModalPart = ({ item, isCardOpened, handleClick }) => {
                             </ul>
                         </div>
                         <div className="solution-wrap item-proj-modal">
-                            <h4>Solution</h4>
+                            <h4>Réalisations</h4>
                             <ul className="solution-wrap-items">
                                 {solution.map((item, index) => (
                                     <li

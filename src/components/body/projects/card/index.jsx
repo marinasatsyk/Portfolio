@@ -16,7 +16,7 @@ import ModalPart from '../modalPart';
 const Card = ({ item, index }) => {
     const { isModalOpened: isCardOpened, toggle: toggleCardOpened } =
         useModal();
-    console.log(isCardOpened);
+
     function handleClick() {
         return toggleCardOpened();
     }

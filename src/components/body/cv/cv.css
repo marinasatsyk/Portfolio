@@ -13,6 +13,9 @@ article.cv {
     letter-spacing: 1px;
     font-family: 'Baloo+Da+2' !important;
 }
+article.cv ul {
+    margin: unset;
+}
 /* header */
 article.cv header.cv {
     height: 200px;
@@ -70,7 +73,11 @@ article.cv h4 {
 .left-side-cv,
 .right-side-cv {
     width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
 .wrap-list-languages li span {
     margin-right: 5px;
 }
@@ -104,23 +111,13 @@ div.foreign-language {
     margin-right: 5px;
 }
 
-.title-education {
-    font-weight: bold;
-}
-
-.title-experience,
-.employer-experience {
-    font-weight: bold;
-}
 .title-experience span:first-child,
 .title-experience span:first-child {
     margin-right: 5px;
 }
 
-.title-experience span:last-child,
-.employer-experience span:last-child {
+.wrap-exprience div:first-child {
     color: #9f9fa0;
-    margin-left: 3px;
 }
 
 .telecharger {
@@ -171,5 +168,11 @@ div.foreign-language {
     .left-side-cv,
     .right-side-cv {
         width: 100%;
+    }
+
+    .wrap-exprience,
+    .first-institution-wrap,
+    .second-institution-wrap {
+        padding-inline-start: 40px;
     }
 }

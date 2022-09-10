@@ -3,10 +3,11 @@ export const cv = {
     phone: '0661380847',
     mail: 'dardemarina@gmail.com',
     location: '06 Alpes-Maritimes',
-    post: 'Développeuse Front-End Junior',
+    post: 'Développeuse Front-End',
     intro: [
-        `Étant une personne dynamique, positive, curieuse et autonome je m’investis à 100% dans les projets qui me sont confiés.`,
-        `Je serais ravie de mettre mon savoir-faire à l’œuvre dans votre équipe.`,
+        `Objectif: Mettre mes compétences au service de votre équipe pour participer à sa réussite. `,
+        `Impliquée et déterminée j’aurai à cœur de vous apporter un travail de qualité et de continuer à m’enrichir de vos côtés.
+        `,
     ],
     hardSkills: [
         `Créer des applications web dynamiques avec JavaScript et React`,
@@ -15,9 +16,11 @@ export const cv = {
         `Refactoriser du code pour qu’il soit plus moderne et optimisé`,
         `Documenter le code avec JSDoc`,
         `Mettre en œuvre des tests unitaires et d’intégration et débugger le code avec Jest`,
+        `Choisir une solution technique adaptée à une demande et travailler en mode Agile`,
+        `Réaliser des présentations avec PowerPoint`,
     ],
     languages: [
-        [`JavaScript`, `HTML`, `CSS`],
+        [`JavaScript`, `HTML`, `CSS`, `SASS`],
         [
             `ReactJS`,
             `react-dom`,
@@ -28,7 +31,7 @@ export const cv = {
             `prop-types`,
             `JSDoc`,
         ],
-        [`SASS`, `ESLint`, `Bootstrap`],
+        [`ESLint`, `Bootstrap`],
         [`Swaggert`, `Jest`],
     ],
     applications: [
@@ -46,16 +49,12 @@ export const cv = {
         `Notion`,
         `Postman`,
     ],
-    skillsPro: [
-        `Choisir une solution technique adaptée à une demande et travailler en mode Agile`,
-        `Réaliser des présentations avec PowerPoint`,
-        `Lire la documentation  en anglais`,
-    ],
+    skillsPro: [],
     skillsLang: [
         { language: `Français`, level: `DALF C1`, points: 5 },
         { language: `Anglais`, level: `technique B1`, points: 3 },
         { language: `Russe`, level: `bilingue`, points: 5 },
-        { language: `Ukrainien`, level: `notions`, points: 3 },
+        { language: `Ukrainien`, level: `compréhension orale`, points: 5 },
     ],
     skillsSoft: [
         `Bon relationnel, bon esprit d'analyse, de synthèse`,
@@ -67,51 +66,27 @@ export const cv = {
     ],
     education: [
         {
-            period: `2021-2022`,
-            name: `Openclassrooms`,
+            period: `Mar. 2021- Août 2022`,
+            name: `Openclassrooms, France`,
             profession: `Développeur Front-End`,
             degree: `Diplôme RNCP niveau 6 (bac+3/4)`,
             note: ``,
             class: 'first',
         },
         {
-            period: `2000-2005`,
-            name: `Institut du Droit de Saint-Pétersbourg`,
+            period: `Sept. 2000- Juin 2005`,
+            name: `Institut du Droit de Saint-Pétersbourg, Russie`,
             profession: `Spécialité : Droit, (spécialisation - droit civil)`,
             degree: `Diplôme d’État d’études supérieures (Bac+5)`,
-            note: `Niveau CEC : 7 (Master) (attestation ENIC-NARIC de Janvier 2020)`,
+            note: ``,
             class: 'second',
         },
     ],
     experience: [
         {
-            title: `Réalisation des projets avec Openclassrooms`,
-            period: `2021-2022`,
-            list: [
-                `Transformer une maquette en site web avec HTML & CSS`,
-                `Dynamiser une page web avec des animations CSS`,
-                `Créer une landing page avec Javascript`,
-                `Créer un site accessible en utilisant Factory design pattern`,
-                `Développer un algorithme de recherche en JavaScript`,
-                `Débugger et tester un SaaS`,
-                `Créer des diagrammes de cas d’usage, des user stories avec critères d’acceptation, des maquettes du site, d’un Kanban découpant le projet`,
-                `Développer une application Web avec React et React Router`,
-                `Développer un tableau de bord d'analytics avec React`,
-                `Utiliser une API pour un compte utilisateur avec React`,
-                `Faire passer une librairie jQuery vers React`,
-            ],
-        },
-        {
             title: `Juriste d'entreprise`,
-            employer: `BEST Group, Saint-Pétersbourg (hors UE)`,
-            period: `2006-2018`,
-            list: [
-                `Elaboration, rédaction, négociation et suivi de divers documents`,
-                `Création des entreprises`,
-                `Elaboration des procès-verbaux, des comptes rendus des assemblées générales de sociétés, de syndicats des copropriétaires`,
-                `Mise en œuvre,  gestion et suivi des contentieux locatifs, des impayés`,
-                `Représentation des intérêts des sociétés à l'égard des tiers`,
-            ],
+            employer: `BEST Group, Saint-Pétersbourg (Russie)`,
+            period: `Janv. 2006 – Déc. 2018`,
         },
     ],
 };

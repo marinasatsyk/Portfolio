@@ -29,8 +29,12 @@ h1.title {
     padding: 15px;
     transition: transform 0.25s ease-in-out;
 }
-
-@media (min-width: 767px) {
+@media (max-width: 768px) {
+    .proj {
+        padding: unset;
+    }
+}
+@media (min-width: 769px) {
     .wrap-cover-proj:hover {
         animation: hover-anim 1s forwards;
     }

@@ -2,16 +2,16 @@ import React from 'react';
 import { ReactComponent as Ranc } from '../../../../assets/circle-solid_dark.svg';
 // import { ReactComponent as NonActivRanc } from '../../../../assets/circle-solid_light.svg';
 
-function RatingScale({ scaleValue, key }) {
+function RatingScale({ scaleValue, Pkey }) {
     // const scaleRating = props.rating;
     const range = [1, 2, 3, 4, 5];
 
     return (
         <>
-            {range.map((rangeElem) =>
+            {range.map((rangeElem, index) =>
                 scaleValue >= rangeElem ? (
                     <span
-                        key={`${rangeElem.toString()}-${key}`}
+                        key={`${rangeElem.toString()}-${Pkey}-${index}`}
                         className="rank-circle"
                     >
                         <Ranc
@@ -21,7 +21,7 @@ function RatingScale({ scaleValue, key }) {
                     </span>
                 ) : (
                     <span
-                        key={`${rangeElem.toString()}-${key}`}
+                        key={`${rangeElem.toString()}-${Pkey}-${index}`}
                         className="rank-circle"
                     >
                         <Ranc
