@@ -9,6 +9,7 @@ import p8 from '../../assets/projects_cover/8.png';
 import p9 from '../../assets/projects_cover/9.png';
 import p10 from '../../assets/projects_cover/10.png';
 import p11 from '../../assets/projects_cover/11.png';
+import p12 from '../../assets/projects_cover/12.png';
 
 export const projects = [
     {
@@ -251,7 +252,7 @@ export const projects = [
     {
         id: 11,
         name: 'HRnet',
-        localLink: p11,
+        localLink: p11, 
         description: {
             challenge: [
                 `Faire passer une librairie jQuery vers React`,
@@ -289,4 +290,45 @@ export const projects = [
         gitHub_modal:
             ' https://github.com/marinasatsyk/DARDEMarina_P14_modal_lib.git',
     },
+    {
+        id: 12,
+        name: 'OpenWeather App',
+        localLink: p12,
+        description: {
+            challenge: [
+                `Créer une application full-stack  en conformité avec les recommandations W3C`,
+                `Réaliser la partie CSS sans librairies externes`,
+                `Gérer les sessions, valider et filtrer les données 
+                saisies en fonction des règles et contraintes de
+                sécurité, en vue de mémoriser les données ou les
+                actions d’un utilisateur de manière persistante`,
+                `Modéliser une base de données `
+            ],
+            solution: [
+                `Application météo avec data historique`,
+                `Authentification avec JWT et refresh JWT, cookies http only`,
+                `Mot de passe est haché pour le stockage `,
+                `Mail validation pour la crétion du compte et modifications de mdp`,
+                `Rôles d'utilisateurs:  user et admin avec permissions differents`,
+            ],
+        },
+        tecnologies: [
+            'js',
+            'react',
+            'typescript',
+            'html',
+            'css',
+            '@reduxjs/toolkit',
+            'Node.js',
+            'Express.js',
+            'MongoDB',
+            'mongoose',
+            'github',
+        ],
+        externalLink: 'https://open-weather-app-study.netlify.app/',
+        gitHub: 'https://github.com/marinasatsyk/client_open_weather_app.git',
+        gitHub_server:
+            'https://github.com/marinasatsyk/server_open_weather_mailer.git',
+    },
+
 ];

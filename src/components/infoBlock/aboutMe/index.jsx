@@ -28,7 +28,7 @@ const AboutMe = () => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 2.3, duration: 1 }}
                     >
-                        Développeuse Front-End
+                        Développeuse
                     </motion.div>
                 </section>
             </article>

@@ -1,9 +1,7 @@
 import React from 'react';
 import { ReactComponent as Ranc } from '../../../../assets/circle-solid_dark.svg';
-// import { ReactComponent as NonActivRanc } from '../../../../assets/circle-solid_light.svg';
 
 function RatingScale({ scaleValue, Pkey }) {
-    // const scaleRating = props.rating;
     const range = [1, 2, 3, 4, 5];
 
     return (
