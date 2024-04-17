@@ -36,10 +36,10 @@ export const data_about_me = {
             },
             {
                 id: 5,
-                content: `Aujourd’hui j’ai hâte de m’investir dans de nouveaux projets, et pourquoi avec vous ? `,
+                content: `Aujourd’hui j’ai hâte de m’investir dans de nouveaux projets, et pourquoi pas avec vous ? `,
             },
         ],
     ],
 
-    conclusion: `Aujourd’hui j’ai hâte de m’investir dans de nouveaux projets, et pourquoi avec vous ? `,
+    conclusion: `Aujourd’hui j’ai hâte de m’investir dans de nouveaux projets, et pourquoi pas avec vous ? `,
 };

@@ -11,10 +11,14 @@ export const cv = {
     ],
     hardSkills: [
         `Créer des applications web dynamiques et responsives`,
-        `Créer les servers en mode MVC,  API`,
+        `Concevoir, développer, et maintenir des solutions Full-Stack`,
+        `Créer des servers en mode MVC,  API`,
+        `Interagir avec des bases de données`,
         `Choisir une solution technique adaptée à une demande`,
+        `Maitriser les outils de gestion de versions (Git)`,
         `Travailler en équipe en mode AGILE`,
-        `Mettre en œuvre des tests unitaires et d’intégration et débugger le code`,
+        `Débugger le code`,
+        `Mettre en œuvre des tests unitaires`,
     ],
     languages: [
         [`JavaScript`, `HTML`, `CSS`, `TypeScript`],
@@ -27,12 +31,12 @@ export const cv = {
         [`Node.js`, `Express.js`],
         [`MongoDB`, `mongoose`],
         [`SASS`, `Bootstrap`],
-        [`Swagger`, `Jest`],
+        [`Swagger`],
+        [`Jest`],
     ],
     applications: [
         `Visual Studio Code`,
         `GitHub`,
-        `Terminal`,
         `Postman`,
         `MongoDB Compass`,
         `Jira`,
@@ -46,12 +50,10 @@ export const cv = {
         { language: `Russe`, level: `bilingue`, points: 5 },
     ],
     skillsSoft: [
-        `Bon relationnel, bon esprit d'analyse, de synthèse`,
-        `Qualité d'écoute, polyvalence`,
-        `Rigueur, objectivité, fiabilité`,
-        `Capacité d'adaptation et d'organisation`,
+        `Bon relationnel, bon esprit d'analyse`,
+        `Empathie`,
+        `Capacité d'adaptation`,
         `Persévérance, autonomie`,
-        `Le sens des responsabilités`,
     ],
     education: [
         {
@@ -81,12 +83,12 @@ export const cv = {
     ],
     experience: [
         {
-            title: `Développeur FullStack`,
+            title: `Développeur FullStack | alternance`,
             employer: `SAS SMART ENERGY, Nice`,
             period: `Dec. 2022 – Avr. 2024`,
         },
         {
-            title: `Développeur web`,
+            title: `Développeur web | stage`,
             employer: ` SAS TELEMAQUE, Valbonne`,
             period: `Sen. 2022 – Oct. 2022`,
         },
